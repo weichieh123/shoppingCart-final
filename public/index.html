@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>index</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+
+    <style>
+        .moon {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 15px -15px;
+            position: absolute;
+            margin: 0 100px;
+            animation: moonmove 3s infinite linear;
+            animation-direction: alternate;
+        }
+
+        @keyframes moonmove {
+            0% {
+                box-shadow: 15px -15px #f5a693;
+                transform: translateX(-15px) translateY(15px);
+            }
+
+            100% {
+                box-shadow: -30px 30px #bbd0fd;
+                transform: translateX(30px) translateY(-30px);
+            }
+        }
+
+        :root {
+            --myLight: #F7F7EE;
+            --myPink: #FDD2BB;
+            --myDark: #383844;
+            --myRed: #E64B4B;
+        }
+
+        body * {
+            /* outline: 1px solid red; */
+        }
+
+        body {
+            background-color: var(--myLight);
+        }
+        .bgMountainRow {
+            overflow: hidden;
+        }
+        .bgMountain {
+            left: 0;
+            top: 300px;
+        }
+        .bgMountain img{
+            width: 100%;
+        }
+/*======== 共同class */
+        .divider {
+            padding-bottom: 50px;
+            border-bottom: 1px solid var(--myDark);
+        }
+
+        .fitContent {
+            width: fit-content;
+        }
+/*========= 共同class */
+        /*================= fonts =======================*/
+        .myh2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 48px;
+            font-weight: lighter;
+        }
+
+        .myh3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        .myh4 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .myh5 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .myh6 {
+            font-family: 'Noto Serif TC', serif;
+            font-size: 18px;
+            font-weight: bold;
+            /* letter-spacing: 80/1000em; */
+            /* line-height: 40/1000em; */
+        }
+
+        .bd1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .bd2 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        span {
+            font-family: 'DM Serif Display', serif;
+            font-size: 28px;
+            font-weight: italic;
+        }
+
+        .btnFont {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .totalPriceFont {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+        /*================= fonts end =======================*/
+        nav .container-fluid {
+            background-color: var(--myLight);
+            height: 120px;
+        }
+
+        .wrap {
+            width: 1160px;
+            margin: 0 auto;
+        }
+
+        .icon15px {
+            width: 15px;
+            height: 15px;
+        }
+
+        .icon20px {
+            width: 20px;
+            height: 20px;
+        }
+
+        /*============== body========================= */
+        body .container-fluid {
+            background-color: var(--myLight);
+            height: 120px;
+        }
+
+        .search {
+            width: 150px;
+            height: 30px;
+            border-radius: 30px;
+            border: 1px solid var(--myDark);
+            margin-left: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .search input {
+            width: 150px;
+            height: 30px;
+
+        }
+
+        .search-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid var(--myDark);
+            background-color: var(--myLight);
+            position: absolute;
+            right: 0;
+        }
+
+/*======== cart item ================*/
+        .select-bar {
+            width: 100%;
+            height: 50px;
+            background-color: var(--myPink);
+        }
+
+        .myRadio {
+            width: 25px;
+            height: 25px;
+        }
+
+        .itemRow {
+            width: 100%;
+            height: 200px;
+            background-color: #fff;
+            /* border-bottom: 1px solid var(--myDark); */
+            border-top: 1px solid var(--myDark);
+        }
+
+        .itemPic {
+            width: 195px;
+            height: 130px;
+            background-color: #ccc;
+            /* margin-left: 105px; */
+        }
+
+        .itemPrice {
+            margin-right: 100px;
+        }
+
+        .btnRow {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .primaryBtn {
+            width: 200px;
+            height: 50px;
+            background-color: var(--myPink);
+            border-radius: 40px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .paymentSelRow {
+            width: 100%;
+            background-color: #fff;
+            padding: 50px;
+        }
+
+
+        .dropdown-toggle::after {
+            display: none;
+        }
+/* =============label============== */
+        .myLabelGroup {
+            padding: 0 36px;
+            margin-top: 100px;
+        }
+        .labelSquare {
+            position: relative;
+            width: 134px;
+            height: 50px;
+            background-color: #FDD2BB;
+            margin: 0 40px 0 0;
+        }
+        .labelTriangle {
+            position: absolute;
+            left: -36px;
+            border-color: transparent #FDD2BB transparent transparent;
+            border-style: solid solid solid solid;
+            /* 設定邊框大小可拼湊出任意形狀的三角形 */
+            border-width: 50px 36px 0px 0px;
+        }
+        .labelTriangleWhite {
+            position: absolute;
+            left: -36px;
+            border-color: transparent white transparent transparent;
+            border-style: solid solid solid solid;
+            /* 設定邊框大小可拼湊出任意形狀的三角形 */
+            border-width: 50px 36px 0px 0px;
+        }
+        .lableName {
+            position: absolute;
+            left: 40px;
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+/* =============label end============== */
+    </style>
+</head>
+
+<body>
+    <div class="bgMountainRow container-fluid p-0">
+        <div class="bgMountain position-absolute">
+            <img src="./img/bgMountain2.svg" alt="">
+        </div>
+
+    </div>
+<!-- bootstrap nav -->
+    <div class="col-10 mx-auto">
+        <nav class="navbar navbar-expand-lg px-0 py-3">
+            <div class="col-4 p-0"></div>
+            <div class="col-4 p-0 ">
+                <a class="navbar-brand d-flex justify-content-center" href="#"><img src="./img/logo.svg" alt=""></a>
+            </div>
+            <div class="col-4 p-0">
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link p-1" href="#"><img class="mx-2 icon15px" src="./img/user.svg" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-1" href="#"><img class="mx-2 icon15px" src="./img/bookmark.svg" alt=""></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-1" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="mx-2 icon15px" src="./img/cart.svg" alt="">
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">商品(1)</a>
+                                <a class="dropdown-item" href="#">訂閱(2)</a>
+                                <a class="dropdown-item" href="#">活動(0)</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="row navbar-bottom justify-content-center mt-3 mx-0 ">
+            <h6 class="bd1 mx-4">ABOUT</h6>
+            <h6 class="bd1 mx-4">PRODUCT</h6>
+            <h6 class="bd1 mx-4">BLOG</h6>
+            <h6 class="bd1 mx-4">ORDER</h6>
+            <h6 class="bd1 mx-4">EVENT</h6>
+            <h6 class="bd1 mx-4">JOIN US</h6>
+        </div>
+    </div> 
+<!-- bootstrap nav -->
+    <nav>
+        <div class="container-fluid border-bottom">
+            <div class="col-10 mx-auto px-0 ">
+                
+                <div class="row navbar-top justify-content-between pt-3 mx-0">
+                    <div class="col-4"></div>
+                    <div class="col-4 d-flex justify-content-center">
+                        <img src="./img/logo.svg" alt="">
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <img class="mx-2 icon15px" src="./img/user.svg" alt="">
+                        <img class="mx-2 icon15px" src="./img/bookmark.svg" alt="">
+                        <img class="mx-2 icon15px" src="./img/cart.svg" alt="">
+                    </div>
+                    
+
+                </div>
+                <div class="row navbar-bottom justify-content-center mt-4 mx-0 ">
+                    <h6 class="bd1 mx-4">ABOUT</h6>
+                    <h6 class="bd1 mx-4">PRODUCT</h6>
+                    <h6 class="bd1 mx-4">BLOG</h6>
+                    <h6 class="bd1 mx-4">ORDER</h6>
+                    <h6 class="bd1 mx-4">EVENT</h6>
+                    <h6 class="bd1 mx-4">JOIN US</h6>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <content>
+        <div class="container-fluid">
+            <!-- 搜尋框  -->
+            <div class="col-10 mx-auto px-0 pt-3">
+                <div class="search">
+                    <div class="search-icon d-flex justify-content-center align-items-center btn">
+                        <img class="icon15px" src="./img/search.svg" alt="">
+                    </div>
+                    <input type="text" placeholder="Search..">
+                </div>
+                <!--TODO:修正wrap會超過container-fluid -->
+            </div>
+            <div class="moon-wrap position-absolute">
+                <div class="moon"></div>
+            </div>
+
+
+            <!---------------- 確認購物車 ---------------->
+            <!-- label -->
+            <div class="col-10 mx-auto px-0">
+                <div class="myLabelGroup d-flex">
+                    <div class="labelSquare">
+                        <p class="lableName">商品</p>
+                        <div class="labelTriangle"></div>
+                    </div>
+                    <div class="labelSquare bg-light">
+                        <p class="lableName">商品</p>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                    <div class="labelSquare bg-light">
+                        <p class="lableName">商品</p>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 全選bar -->
+            <div class="col-10 mx-auto px-0 shadow-sm ">
+                <div class="d-flex select-bar align-items-center">
+                    <input class="myRadio ml-3" type="radio" name="selectAll" id="">
+                    <h6 class="bd2 m-4">全選</h6>
+                    <img class="icon20px ml-auto mr-3" src="./img/delete.svg" alt="">
+                </div>
+                <!-- 商品列表 -->
+                <div class="d-flex itemRow align-items-center justify-content-between">
+                    <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                    <div class="item d-flex align-items-center mr-5">
+                        <div class="itemPic"></div>
+                        <div class="bd2">
+                            <p class="mb-0 ml-5">弦月柔棉<br>
+                                日用薄型衛生棉 15片</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="bd1 p-2 ">-</div>
+                        <div class="bd1 p-2">1</div>
+                        <div class="bd1 p-2">+</div>
+                    </div>
+                    <div class="itemPrice bd1">$ 600</div>
+                </div>
+                <!-- 商品列表 -->
+                <div class="d-flex itemRow align-items-center justify-content-between">
+                    <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                    <div class="item d-flex align-items-center mr-5">
+                        <div class="itemPic"></div>
+                        <div class="bd2">
+                            <p class="mb-0 ml-5">弦月柔棉<br>
+                                日用薄型衛生棉 15片</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="bd1 p-2 ">-</div>
+                        <div class="bd1 p-2">1</div>
+                        <div class="bd1 p-2">+</div>
+                    </div>
+                    <div class="itemPrice bd1">$ 600</div>
+                </div>
+            </div>
+            <!---------------- 付款方式 ---------------->
+            <div class="col-10 mx-auto px-0 shadow-sm ">
+                <!-- 付款方式bar -->
+                <div class="d-flex select-bar align-items-center">
+                    <h6 class="bd2 m-4">付款方式</h6>
+                </div>
+                <!-- 付款方式列表 -->
+                <div class="paymentSelRow d-flex flex-column justify-content-around">
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2 divider">
+                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end my-5">
+                        <p class="mb-0 totalPriceFont">總計 NT$ 1260</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!---------------- 填寫資料 ---------------->
+            <div class="col-10 mx-auto px-0 shadow-sm ">
+                <!-- 填寫資料bar -->
+                <div class="d-flex select-bar align-items-center">
+                    <h6 class="bd2 m-4">填寫資料</h6>
+                </div>
+                <!-- 填寫資料列表 -->
+                <div class="paymentSelRow d-flex flex-column justify-content-around">
+                    <div class="my-2">
+                        <div>
+                            <li class="bd2 mb-0 ml-4">選擇7-11店家</li>
+                            <select class="ml-5 my-3" name="" id="">
+                                <option value="">選擇縣市</option>
+                            </select>
+                            <select class="ml-3 my-3" name="" id="">
+                                <option value="">選擇店家</option>
+                            </select>
+                            <div class="fitContent bd2 ml-auto mr-3">運費 NT$ 60</div>
+                            <div class="divider w-100"></div>
+                        </div>
+                        <div>
+                            <li class="bd2 mb-0 ml-4 mt-5">取貨人資料</li>
+                            <div>
+                                <label class="ml-5 my-3" for="">姓名：</label>
+                                <input class="ml-3 my-3" type="text">
+                            </div>
+                            <div>
+                                <label class="ml-5 my-1" for="">電話：</label>
+                                <input class="ml-3 my-1" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end my-5">
+                        <p class="mb-0 totalPriceFont">總計 NT$ 1260</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 按鈕列 -->
+            <div class="col-10 mx-auto">
+                <div class="d-flex btnRow justify-content-between mb-2">
+                    <div class="primaryBtn ml-5 btnFont">上一步</div>
+                    <div class="primaryBtn mr-5 btnFont">下一步</div>
+                </div>
+            </div>
+        </div>
+    </content>
+
+
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

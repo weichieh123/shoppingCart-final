@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moon</title>
+    <style>
+        * {
+            position: relative;
+            font-family: "Hind Vadodara", sans-serif, "微軟正黑體";
+            /* outline: 1px solid red; */
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+        }
+
+        label {
+            cursor: pointer;
+        }
+
+        .daybox {
+            width: 50%;
+            max-width: 400px;
+            background-color: #f3f3f3;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            overflow: hidden;
+            transition-duration: 2s;
+            cursor: pointer;
+            margin: 50px;
+        }
+
+
+        .top {
+            height: 330px;
+            /* background: linear-gradient(20deg, #19283D, #1D678F); */
+            /* background-size: 100% 300%; */
+            background-size: 100% 100%;
+            background-color: #F7F7EE;
+            animation: daylight 20s both;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .top .moon {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            box-shadow: 15px -15px;
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            animation: moonmove 2s infinite;
+        }
+
+        @keyframes moonmove {
+            0% {
+                box-shadow: 15px -15px #FDD2BB;
+                transform: translateX(-15px) translateY(15px);
+            }
+
+            100% {
+                box-shadow: -30px 30px #FDD2BB;
+                transform: translateX(30px) translateY(-30px);
+            }
+        }
+
+        .moon,
+        .cloud {
+            transiton: 0.5s;
+        }
+
+        #trapezoid {
+            outline: 1px solid snow;
+            border-bottom: 100px solid red;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            height: 0;
+            width: 100px;
+        }
+
+        .labelSquare {
+            position: relative;
+            width: 134px;
+            height: 50px;
+            background-color: #FDD2BB;
+            margin: 19px;
+        }
+        .labelTriangle {
+            outline: 1px solid red;
+            position: absolute;
+            left: -36px;
+            border-color: #ff000000 #FDD2BB transparent transparent;
+            border-style: solid solid solid solid;
+            /* 設定邊框大小可拼湊出任意形狀的三角形 */
+            border-width: 50px 36px 0px 0px;
+            /* 設定 width、height 可更好理解原理 */
+            height: 0px;
+            width: 0px;
+        }
+        .lableName {
+            position: absolute;
+            left: 40px;
+            margin: 0;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 50px;
+        }
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: #222;
+            box-shadow: 30px -30px;
+            border-radius: 50%;
+            animation: move 3s infinite;
+            /* animation-direction: alternate; */
+            
+            
+        }
+        @keyframes move {
+            0% {
+                box-shadow: 30px -30px #f5a693;
+                transform: translateX(-30px) translateY(30px);
+            }
+
+            100% {
+                box-shadow: -30px 30px #f5a693;
+                transform: translateX(30px) translateY(-30px);
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="circle">
+
+    </div>
+    <div class="daybox">
+        <div class="top">
+            <div class="moon"></div>
+        </div>
+    </div>
+    <!-- <div id="trapezoid"></div> -->
+    <div class="labelSquare">
+        <p class="lableName">商品</p>
+        <div class="labelTriangle"></div>
+    </div>
+    <div class="labelSquare">
+        <p class="lableName">商品</p>
+        <div class="labelTriangle"></div>
+    </div>
+    <div class="labelSquare">
+        <p class="lableName">商品</p>
+        <div class="labelTriangle"></div>
+    </div>
+    
+</body>
+
+</html>
