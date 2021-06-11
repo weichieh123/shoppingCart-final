@@ -16,13 +16,13 @@
         html,
         body {
             width: 100%;
-            height: 100%;
+            height: 300vh;
             margin: 0;
             padding: 0;
-            display: flex;
+            /* display: flex;
             justify-content: center;
-            align-items: center;
-            background-color: #222;
+            align-items: center; */
+            /* background-color: #222; */
         }
 
         label {
@@ -96,6 +96,7 @@
             background-color: #FDD2BB;
             margin: 19px;
         }
+
         .labelTriangle {
             outline: 1px solid red;
             position: absolute;
@@ -108,6 +109,7 @@
             height: 0px;
             width: 0px;
         }
+
         .lableName {
             position: absolute;
             left: 40px;
@@ -117,37 +119,40 @@
             font-weight: bold;
             line-height: 50px;
         }
-        .circle {
-            width: 50px;
-            height: 50px;
-            background-color: #222;
-            box-shadow: 30px -30px;
-            border-radius: 50%;
-            animation: move 3s infinite;
-            /* animation-direction: alternate; */
-            
-            
-        }
-        @keyframes move {
-            0% {
-                box-shadow: 30px -30px #f5a693;
-                transform: translateX(-30px) translateY(30px);
-            }
 
-            100% {
-                box-shadow: -30px 30px #f5a693;
-                transform: translateX(30px) translateY(-30px);
-            }
-        }
         
+
+        div.panel,
+        p.flip {
+            line-height: 30px;
+            margin: auto;
+            font-size: 16px;
+            padding: 5px;
+            text-align: center;
+            background: #555;
+            border: solid 1px #666;
+            color: #ffffff;
+            border-radius: 3px;
+            user-select: none
+        }
+
+        div.panel {
+            display: none;
+        }
+
+        p.flip {
+            cursor: pointer;
+        }
+        .wrap {
+            width: 400px;
+            margin: 20px auto;
+        }
     </style>
 </head>
 
 <body>
 
-    <div class="circle">
-
-    </div>
+    
     <div class="daybox">
         <div class="top">
             <div class="moon"></div>
@@ -166,7 +171,24 @@
         <p class="lableName">商品</p>
         <div class="labelTriangle"></div>
     </div>
-    
+    <div class="wrap">
+        <p class="flip">Click to show/hide panel</p>
+        <div class="panel">
+            <p>Because time is valuable, we deliver quick and easy learning.</p>
+            <p>At W3Schools, you can study everything you need to learn, in an accessible and handy format.</p>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".flip").click(function () {
+                $(".panel").toggle();
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -51,7 +51,7 @@
         }
 
         body * {
-            /* outline: 1px solid red; */
+            outline: 1px solid red;
         }
 
         body {
@@ -141,6 +141,12 @@
         }
 
         /*================= fonts end =======================*/
+        /* bootstrap nav cart */
+        .dropdown-menu {
+            margin-left: -50px;
+        }
+        /* bootstrap nav cart end */
+
         nav .container-fluid {
             background-color: var(--myLight);
             height: 120px;
@@ -154,6 +160,10 @@
         .icon15px {
             width: 15px;
             height: 15px;
+        }
+        .icon18px {
+            width: 18px;
+            height: 18px;
         }
 
         .icon20px {
@@ -286,6 +296,15 @@
             line-height: 50px;
         }
 /* =============label end============== */
+/* =============商品下拉區塊============== */
+        .dropdownItems{
+            cursor: pointer;
+        }
+        .dropdownItemsPanel {
+            display: none;
+        }
+/* =============商品下拉區塊end============== */
+
     </style>
 </head>
 
@@ -317,7 +336,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img class="mx-2 icon15px" src="./img/cart.svg" alt="">
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div class="dropdown-menu fitContent" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="#">商品(1)</a>
                                 <a class="dropdown-item" href="#">訂閱(2)</a>
                                 <a class="dropdown-item" href="#">活動(0)</a>
@@ -443,28 +462,52 @@
                     <div class="itemPrice bd1">$ 600</div>
                 </div>
             </div>
-            <!---------------- 付款方式 ---------------->
+            <!---------------- 選擇物流方式 ---------------->
             <div class="col-10 mx-auto px-0 shadow-sm ">
-                <!-- 付款方式bar -->
+                <!-- 物流方式bar -->
                 <div class="d-flex select-bar align-items-center">
-                    <h6 class="bd2 m-4">付款方式</h6>
+                    <h6 class="bd2 m-4">物流選擇</h6>
                 </div>
-                <!-- 付款方式列表 -->
+                <!-- 物流方式列表 -->
+                
                 <div class="paymentSelRow d-flex flex-column justify-content-around">
+                    <div class="mb-3">
+                        <div class="dropdownItems d-flex justify-content-between align-items-center pr-3 ml-4">
+                            <div class="bd2 " >●&nbsp&nbsp購物車商品項目：（總金額1200元）</div>
+                            <img class="icon18px" src="./img/dropdownBtn.svg" alt="">
+                        </div>
+                        <div class="dropdownItemsPanel">
+                            <div class="my-2 ml-5 pr-5 d-flex justify-content-around">
+                                <div>弦月柔棉 日用薄型衛生棉 15片</div>
+                                <div>1個</div>
+                                <div>$ 600</div>
+                                <div>商品詳細頁</div>
+                            </div>
+                            <div class="my-2 ml-5 pr-5 d-flex justify-content-around">
+                                <div>弦月柔棉 日用薄型衛生棉 15片</div>
+                                <div>1個</div>
+                                <div>$ 600</div>
+                                <div>商品詳細頁</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bd2 mb-3 ml-4">●&nbsp&nbsp選擇物流方式</div>
                     <div class="d-flex align-items-center justify-content-start my-2">
-                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <input class="myRadio ml-5" type="radio" name="selectOne" id="">
                         <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-start my-2">
-                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <input class="myRadio ml-5" type="radio" name="selectOne" id="">
                         <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-start my-2">
-                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <input class="myRadio ml-5" type="radio" name="selectOne" id="">
                         <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-start my-2 divider">
-                        <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                        <input class="myRadio ml-5" type="radio" name="selectOne" id="">
                         <p class="bd2 mb-0 ml-4">7-11取貨付款 (未滿900元，運費60元)</p>
                     </div>
                     <div class="d-flex align-items-center justify-content-end my-5">
@@ -484,7 +527,8 @@
                 <div class="paymentSelRow d-flex flex-column justify-content-around">
                     <div class="my-2">
                         <div>
-                            <li class="bd2 mb-0 ml-4">選擇7-11店家</li>
+                            <div class="bd2 mb-2 ml-4">●&nbsp&nbsp選擇7-11店家</div>
+                            <!-- <li class="bd2 mb-0 ml-4">選擇7-11店家</li> -->
                             <select class="ml-5 my-3" name="" id="">
                                 <option value="">選擇縣市</option>
                             </select>
@@ -495,7 +539,8 @@
                             <div class="divider w-100"></div>
                         </div>
                         <div>
-                            <li class="bd2 mb-0 ml-4 mt-5">取貨人資料</li>
+                            <div class="bd2 mb-2 ml-4">●&nbsp&nbsp取貨人資料</div>
+                            <!-- <li class="bd2 mb-0 ml-4 mt-5">取貨人資料</li> -->
                             <div>
                                 <label class="ml-5 my-3" for="">姓名：</label>
                                 <input class="ml-3 my-3" type="text">
@@ -529,6 +574,16 @@
 
     <script src="./lib/jquery-3.6.0.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    
+    <script>
+        $('document').ready(function(){
+            $('.dropdownItems').click(function(){
+                $('.dropdownItemsPanel').toggle();
+            });
+            
+        });
+    </script>
 </body>
 
 </html>
