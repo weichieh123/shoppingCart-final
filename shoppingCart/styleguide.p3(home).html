@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>Guide p3 宅配</title>
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/fontawesome/css/all.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div class="bgMountainRow container-fluid p-0">
+        <div class="bgMountain position-absolute">
+            <img src="../public/img/bgMountain.svg" alt="">
+        </div>
+    </div>
+    
+
+    <content>
+        <div class="container-fluid">
+            <!-- 購物車流程 -->
+            <div class="col-10 px-0 d-flex mx-auto justify-content-center">
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle"></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <p class="stepFont">確認購物車</p>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle"></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <p class="stepFont">物流選擇 </p>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle stepActive"></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <p class="stepFont">填寫資料</p>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle"></i>
+                    </div>
+                    <p class="stepFont">完成訂購</p>
+                </div>
+            </div>
+
+
+            <!---------------- 確認購物車 ---------------->
+            <!-- label -->
+            <div class="col-10 mx-auto px-0">
+                <div class="myLabelGroup d-flex">
+                    <div class="labelSquare">
+                        <p class="lableName">商品</p>
+                        <div class="labelTriangle"></div>
+                    </div>
+                    <div class="labelSquare bg-light">
+                        <p class="lableName">訂閱</p>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                    <div class="labelSquare bg-light">
+                        <p class="lableName">活動</p>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                </div>
+            </div>
+ 
+
+            <!---------------- 填寫資料 ---------------->
+            <div class="col-10 mx-auto px-0 shadow-sm ">
+                <!-- 填寫資料bar -->
+                <div class="d-flex select-bar align-items-center">
+                    <h6 class="myh5 m-4">填寫資料</h6>
+                </div>
+                <!-- 填寫資料列表 -->
+                <div class="paymentSelRow d-flex flex-column justify-content-around">
+                    <div class="my-2">
+                        <div>
+                            <!---------------- 購物車內容 ---------------->
+                            <div class="mb-3">
+                                <div class="dropdownItems d-flex justify-content-between align-items-center pr-3 titleDivider ml-4">
+                                    <div class="myh5"><span class="myh5">●</span>&nbsp&nbsp購物車商品項目：（總金額1200元）</div>
+                                    <img class="icon18px" src="../public/img/dropdownBtn.svg" alt="">
+                                </div>
+                                <div class="dropdownItemsPanel">
+                                    <div class="my-2 ml-5 pr-5 d-flex justify-content-around">
+                                        <div>弦月柔棉 日用薄型衛生棉 15片</div>
+                                        <div>1個</div>
+                                        <div>$ 600</div>
+                                        <div>商品詳細頁</div>
+                                    </div>
+                                    <div class="my-2 ml-5 pr-5 d-flex justify-content-around">
+                                        <div>弦月柔棉 日用薄型衛生棉 15片</div>
+                                        <div>1個</div>
+                                        <div>$ 600</div>
+                                        <div>商品詳細頁</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!---------------- 物流方式 ---------------->
+                            <div class="myh5 mb-3 ml-4 titleDivider"><span class="myh5">●</span>&nbsp&nbsp物流方式：便利商店 （運費60元）</div>
+                            <div class="myh5 mb-3 ml-4 titleDivider">●&nbsp&nbsp選擇付款方式</div>
+                            <div class="d-flex align-items-center justify-content-start my-2">
+                                <input class="myRadio ml-5" type="radio" name="selectOne" id="">
+                                <p class="bd2 mb-0 ml-4">取貨付款</p>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-start my-2">
+                                <input class="myRadio ml-5" type="radio" name="selectOne" id="">
+                                <p class="bd2 mb-0 ml-4">信用卡支付</p>
+                            </div>
+                            <!---------------- 收貨人資料 ---------------->
+                            <div class="myh5 mb-2 ml-4 mt-4 titleDivider">●&nbsp&nbsp收貨人資料</div>
+                            <div class="d-flex flex-column fitContent ml-5">
+                                <div>
+                                    <label class="myInputLabel ml-5 my-3" for="">姓名：</label>
+                                    <input class="ml-3 my-3" type="text">
+                                </div>
+                                <div>
+                                    <label class="myInputLabel ml-5 my-1" for="">電話：</label>
+                                    <input class="ml-3 my-1" type="text">
+                                </div>
+                                <div>
+                                    <label class="myInputLabel ml-5 my-3" for="">寄送地址：</label>
+                                    <select class="ml-3 my-3" name="" id="">
+                                        <option value="">縣市</option>
+                                    </select>
+                                    <select class="ml-3 my-3" name="" id="">
+                                        <option value="">區域</option>
+                                    </select>
+                                    <input class="ml-3 my-3" type="text">
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="fitContent bd2 ml-auto mr-3">運費 NT$ 120</div> -->
+                            <!-- <div class="divider w-100"></div> -->
+                        </div>
+                        <div>
+                            <!---------------- 信用卡資料 ---------------->
+                            <div class="myh5 mb-2 ml-4 mt-4 titleDivider">●&nbsp&nbsp信用卡資料</div>
+                            <div>
+                                <label class="myInputLabel ml-5 my-3" for="">持卡人姓名：</label>
+                                <input class="ml-3 my-3" type="text">
+                            </div>
+                            <div>
+                                <label class="myInputLabel ml-5 my-1" for="">信用卡號碼：</label>
+                                <input class="ml-3 my-1" type="text">
+                            </div>
+                            <div>
+                                <label class="myInputLabel ml-5 my-1" for="">有效日期：</label>
+                                <input class="ml-3 my-1" type="text">
+                            </div>
+                            <div>
+                                <label class="myInputLabel ml-5 my-1" for="">安全碼：</label>
+                                <input class="ml-3 my-1" type="text">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-end my-5">
+                        <p class="mb-0 totalPriceFont">總計 NT$ 1260</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 按鈕列 -->
+            <div class="col-10 mx-auto">
+                <div class="d-flex btnRow justify-content-between mb-2">
+                    <div class="primaryBtn ml-5 btnFont">上一步</div>
+                    <div class="primaryBtn mr-5 btnFont">下一步</div>
+                </div>
+            </div>
+        </div>
+    </content>
+
+
+    <script src="../public/lib/jquery-3.6.0.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $('document').ready(function () {
+            $('.dropdownItems').click(function () {
+                $('.dropdownItemsPanel').toggle();
+            });
+
+        });
+    </script>
+</body>
+
+</html>
