@@ -89,13 +89,15 @@
             <!-- 全選bar -->
             <div class="col-10 mx-auto px-0 shadow-sm ">
                 <div class="d-flex select-bar align-items-center">
-                    <input class="myRadio ml-3" type="radio" name="selectAll" id="">
+                    <!-- <input class="myRadio ml-3" type="radio" name="selectAll" id=""> -->
+                    <div id="selectAll" class="myRadio selectAll ml-3"></div>
                     <div class="myh5 m-4">全選</div>
                     <img class="icon20px ml-auto mr-3" src="../public/img/delete.svg" alt="">
                 </div>
                 <!-- 商品列表 -->
                 <div class="d-flex itemRow align-items-center justify-content-between">
-                    <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                    <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
+                    <div class="myRadio selectOne ml-3"></div>
                     <div class="item d-flex align-items-center mr-5">
                         <div class="itemPic"></div>
                         <div class="bd2">
@@ -113,7 +115,8 @@
                 </div>
                 <!-- 商品列表 -->
                 <div class="d-flex itemRow align-items-center justify-content-between">
-                    <input class="myRadio ml-3" type="radio" name="selectOne" id="">
+                    <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
+                    <div class="myRadio selectOne ml-3"></div>
                     <div class="item d-flex align-items-center mr-5">
                         <div class="itemPic"></div>
                         <div class="bd2">
@@ -157,8 +160,20 @@
             $('.dropdownItems').click(function () {
                 $('.dropdownItemsPanel').toggle();
             });
-
         });
+        $('.myRadio').click(function () {
+            console.log($(this));
+            $(this).toggleClass('checked');
+        });
+        $('.selectAll').click(function () {
+            if($('.selectAll').hasClass('checked')){
+                $('.selectOne').addClass('checked');
+            } else {
+                $('.selectOne').removeClass('checked');
+            }
+        });
+
+    
     </script>
 </body>
 

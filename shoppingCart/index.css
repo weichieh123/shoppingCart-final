@@ -253,6 +253,20 @@ nav .container-fluid {
 .myRadio {
     width: 25px;
     height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid var(--myDark);
+}
+.myRadio:hover {
+    background-color: var(--myRed);
+    border: none;
+}
+.myRadio.checked {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: var(--myRed);
+    border: none;
 }
 
 .itemRow {
