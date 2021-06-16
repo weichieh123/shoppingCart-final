@@ -159,11 +159,11 @@ body {
     font-weight: italic;
 } */
 
-.btnFont {
+/* .btnFont {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 500;
-}
+} */
 
 .totalPriceFont {
     /* 總計 */
@@ -270,24 +270,20 @@ nav .container-fluid {
     /* margin-left: 105px; */
 }
 
-.itemPrice {
-    margin-right: 100px;
-}
-
 .btnRow {
     margin-top: 100px;
     margin-bottom: 100px;
     padding-bottom: 100px;
 }
 
-.primaryBtn {
+/* .primaryBtn {
     width: 200px;
     height: 50px;
     background-color: var(--myPink);
     border-radius: 40px;
     text-align: center;
     line-height: 50px;
-}
+} */
 
 .paymentSelRow {
     width: 100%;

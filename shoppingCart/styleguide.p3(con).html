@@ -18,6 +18,7 @@
     <title>Guide p3 便利商店</title>
     <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../public/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../styleguide/style-guide.css">
     <link rel="stylesheet" href="./index.css">
 
 </head>
@@ -40,7 +41,7 @@
                         <i class="stepLine"></i>
                         <i class="stepArrow right"></i>
                     </div>
-                    <p class="stepFont">確認購物車</p>
+                    <div class="stepFont">確認購物車</div>
                 </div>
                 <div class="step">
                     <div class="d-flex align-items-center">
@@ -48,7 +49,7 @@
                         <i class="stepLine"></i>
                         <i class="stepArrow right"></i>
                     </div>
-                    <p class="stepFont">物流選擇 </p>
+                    <div class="stepFont">物流選擇 </div>
                 </div>
                 <div class="step">
                     <div class="d-flex align-items-center">
@@ -56,13 +57,13 @@
                         <i class="stepLine"></i>
                         <i class="stepArrow right"></i>
                     </div>
-                    <p class="stepFont">填寫資料</p>
+                    <div class="stepFont">填寫資料</div>
                 </div>
                 <div class="step">
                     <div class="d-flex align-items-center">
                         <i class="stepCircle"></i>
                     </div>
-                    <p class="stepFont">完成訂購</p>
+                    <div class="stepFont">完成訂購</div>
                 </div>
             </div>
 
@@ -71,15 +72,15 @@
             <div class="col-10 mx-auto px-0">
                 <div class="myLabelGroup d-flex">
                     <div class="labelSquare">
-                        <p class="lableName">商品</p>
+                        <div class="lableName">商品</div>
                         <div class="labelTriangle"></div>
                     </div>
                     <div class="labelSquare bg-light">
-                        <p class="lableName">訂閱</p>
+                        <div class="lableName">訂閱</div>
                         <div class="labelTriangleWhite"></div>
                     </div>
                     <div class="labelSquare bg-light">
-                        <p class="lableName">活動</p>
+                        <div class="lableName">活動</div>
                         <div class="labelTriangleWhite"></div>
                     </div>
                 </div>
@@ -89,7 +90,7 @@
             <div class="col-10 mx-auto px-0 shadow-sm ">
                 <!-- 填寫資料bar -->
                 <div class="d-flex select-bar align-items-center">
-                    <h6 class="myh5 m-4">填寫資料</h6>
+                    <div class="myh5 m-4">填寫資料</div>
                 </div>
                 <!-- 填寫資料列表 -->
                 <div class="paymentSelRow d-flex flex-column justify-content-around">
@@ -122,11 +123,11 @@
                             <div class="myh5 mb-3 ml-4 mt-4 titleDivider">●&nbsp&nbsp選擇付款方式</div>
                             <div class="d-flex align-items-center justify-content-start my-2">
                                 <input class="myRadio ml-5" type="radio" name="selectOne" id="">
-                                <p class="bd2 mb-0 ml-4">取貨付款</p>
+                                <div class="bd2 mb-0 ml-4">取貨付款</div>
                             </div>
                             <div class="d-flex align-items-center justify-content-start my-2">
                                 <input class="myRadio ml-5" type="radio" name="selectOne" id="">
-                                <p class="bd2 mb-0 ml-4">信用卡支付</p>
+                                <div class="bd2 mb-0 ml-4">信用卡支付</div>
                             </div>
                             <!---------------- 選擇取貨店家 ---------------->
                             <div class="myh5 mb-2 ml-4 mt-4 titleDivider">●&nbsp&nbsp選擇取貨店家</div>
@@ -169,7 +170,7 @@
                     </div>
                     <!---------------- 總計 ---------------->
                     <div class="d-flex align-items-center justify-content-end my-5">
-                        <p class="mb-0 totalPriceFont">總計 NT$ 1260</p>
+                        <div class="mb-0 totalPriceFont">總計 NT$ 1260</div>
                     </div>
                 </div>
 
@@ -179,8 +180,12 @@
             <!-- 按鈕列 -->
             <div class="col-10 mx-auto">
                 <div class="d-flex btnRow justify-content-between mb-2">
-                    <div class="primaryBtn ml-5 btnFont">上一步</div>
-                    <div class="primaryBtn mr-5 btnFont">下一步</div>
+                    <div class="bg-green p-4 fitContent">
+                        <button class="btn-soft-green">上一步</button>
+                    </div>
+                    <div class="bg-green p-4 fitContent">
+                        <button class="btn-soft-green">下一步</button>
+                    </div>
                 </div>
             </div>
         </div>
