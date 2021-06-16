@@ -89,15 +89,15 @@
             <!-- 全選bar -->
             <div class="col-10 mx-auto px-0 shadow-sm ">
                 <div class="d-flex select-bar align-items-center">
-                    <!-- <input class="myRadio ml-3" type="radio" name="selectAll" id=""> -->
-                    <div id="selectAll" class="myRadio selectAll ml-3"></div>
+                    <!-- <input class="myCheckbox ml-3" type="radio" name="selectAll" id=""> -->
+                    <div id="selectAll" class="myCheckbox selectAll ml-3"></div>
                     <div class="myh5 m-4">全選</div>
-                    <img class="icon20px ml-auto mr-3" src="../public/img/delete.svg" alt="">
+                    <i class="fas fa-trash ml-auto p-3 scBtn"></i>
                 </div>
                 <!-- 商品列表 -->
                 <div class="d-flex itemRow align-items-center justify-content-between">
                     <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
-                    <div class="myRadio selectOne ml-3"></div>
+                    <div class="myCheckbox selectOne ml-3"></div>
                     <div class="item d-flex align-items-center mr-5">
                         <div class="itemPic"></div>
                         <div class="bd2">
@@ -106,17 +106,17 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        <div class="bd1 p-2 ">-</div>
+                        <div class="bd1 p-2 scBtn scBtnSub">-</div>
                         <div class="bd1 p-2">1</div>
-                        <div class="bd1 p-2">+</div>
+                        <div class="bd1 p-2 scBtn scBtnAdd">+</div>
                     </div>
                     <div class="bd1">$ 600</div>
-                    <i class="fas fa-times align-self-start p-3"></i>
+                    <i class="fas fa-times align-self-start p-3 scBtn"></i>
                 </div>
                 <!-- 商品列表 -->
                 <div class="d-flex itemRow align-items-center justify-content-between">
                     <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
-                    <div class="myRadio selectOne ml-3"></div>
+                    <div class="myCheckbox selectOne ml-3"></div>
                     <div class="item d-flex align-items-center mr-5">
                         <div class="itemPic"></div>
                         <div class="bd2">
@@ -125,12 +125,12 @@
                         </div>
                     </div>
                     <div class="d-flex">
-                        <div class="bd1 p-2 ">-</div>
+                        <div class="bd1 p-2 scBtn scBtnSub">-</div>
                         <div class="bd1 p-2">1</div>
-                        <div class="bd1 p-2">+</div>
+                        <div class="bd1 p-2 scBtn scBtnAdd">+</div>
                     </div>
                     <div class="bd1">$ 600</div>
-                    <i class="fas fa-times align-self-start p-3"></i>
+                    <i class="fas fa-times align-self-start p-3 scBtn"></i>
                 </div>
             </div>
             
@@ -152,29 +152,10 @@
 
     <script src="../public/lib/jquery-3.6.0.js"></script>
     <script src="../public/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 
-    <script>
-        $('document').ready(function () {
-            $('.dropdownItems').click(function () {
-                $('.dropdownItemsPanel').toggle();
-            });
-        });
-        $('.myRadio').click(function () {
-            console.log($(this));
-            $(this).toggleClass('checked');
-        });
-        $('.selectAll').click(function () {
-            if($('.selectAll').hasClass('checked')){
-                $('.selectOne').addClass('checked');
-            } else {
-                $('.selectOne').removeClass('checked');
-            }
-        });
 
-    
-    </script>
 </body>
 
 </html>

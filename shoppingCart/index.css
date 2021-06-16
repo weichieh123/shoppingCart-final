@@ -60,7 +60,7 @@
     right: 0;
 }
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -250,18 +250,19 @@ nav .container-fluid {
     background-color: var(--myPink);
 }
 
-.myRadio {
+.myCheckbox, .myRadio {
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: #fff;
     border: 1px solid var(--myDark);
 }
-.myRadio:hover {
+.myCheckbox:hover, .myRadio:hover {
     background-color: var(--myRed);
     border: none;
+    cursor: pointer;
 }
-.myRadio.checked {
+.myCheckbox.checked, .myRadio.checked {
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -282,6 +283,11 @@ nav .container-fluid {
     height: 130px;
     background-color: #ccc;
     /* margin-left: 105px; */
+}
+.scBtn:hover {
+    background-color: var(--myRed);
+    color: #fff;
+    cursor: pointer;
 }
 
 .btnRow {
@@ -364,6 +370,9 @@ nav .container-fluid {
 
 .dropdownItemsPanel {
     display: none;
+}
+#dropdownBtn.down {
+    transform: rotate(180deg);
 }
 
 /* =============商品下拉區塊end============== */
