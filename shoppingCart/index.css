@@ -60,7 +60,7 @@
     right: 0;
 }
 body * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -292,7 +292,8 @@ nav .container-fluid {
     /* height: 200px; */
     padding:40px 15px 40px 0;
     background-color: #fff;
-    /* border-bottom: 1px solid var(--myDark); */
+}
+.itemRow.bdTop {
     border-top: 1px solid var(--myDark);
 }
 
@@ -303,7 +304,7 @@ nav .container-fluid {
     /* margin-left: 105px; */
 }
 .itemSubtotal {
-    margin-right: 100px;
+    margin-right: 80px;
 }
 .delOne {
     top: 0;
@@ -394,7 +395,8 @@ nav .container-fluid {
 }
 
 .dropdownItemsPanel {
-    display: none;
+    /* 預設隱藏商品細項 */
+    /* display: none; */
 }
 #dropdownBtn.down {
     transform: rotate(180deg);
