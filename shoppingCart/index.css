@@ -304,8 +304,18 @@ nav .container-fluid {
     background-color: #ccc;
     /* margin-left: 105px; */
 }
+@media screen and (max-width: 992px) {
+    .itemPic {
+        display: none;
+    }
+}
 .itemSubtotal {
     margin-right: 80px;
+}
+@media screen and (max-width: 1200px) {
+    .itemSubtotal {
+        margin: 0;
+    }
 }
 .delOne {
     top: 0;
@@ -355,6 +365,9 @@ nav .container-fluid {
     height: 50px;
     background-color: #FDD2BB;
     margin: 0 40px 0 0;
+}
+.labelSquare.bgWhite {
+    background-color: #fff;
 }
 
 .labelTriangle {
