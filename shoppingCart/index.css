@@ -60,7 +60,7 @@
     right: 0;
 }
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -75,7 +75,7 @@ body {
 
 .bgMountain {
     left: 0;
-    top: 150px;
+    top: 130px;
 }
 
 .bgMountain img {
@@ -167,9 +167,15 @@ body {
 
 .totalPriceFont {
     /* 總計 */
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: normal;
+    letter-spacing: 3px;
+}
+.totalPriceFont span {
+    color: var(--myRed);
+    font-weight: bold;
 }
 .stepFont {
     /* 購物車流程 */
@@ -241,6 +247,17 @@ nav .container-fluid {
     height: 20px;
 }
 
+.hotTag {
+    width: 82px;
+    left: 40px;
+    top: -42px;
+}
+.hotTagTitle {
+    z-index: 90;
+    color: #fff;
+    margin-right: -50px;
+    margin-bottom: 3px;
+}
 
 
 /*======== cart item ================*/
@@ -363,9 +380,9 @@ nav .container-fluid {
 .dropdownItems {
     cursor: pointer;
 }
-.dropdownItemsPanel:nth-child(2n) {
-    /* 還有問題 */
-    /* background-color: var(--myGray); */
+.dropdownItem:nth-of-type(even) {
+    /* 商品偶數加背景色 */
+    background-color: rgba(205,205,210,0.35);
 }
 
 .dropdownItemsPanel {
@@ -385,3 +402,6 @@ nav .container-fluid {
 }
 /* =============map區塊end============== */
 
+.ad-arrow {
+    width: 15px;
+}

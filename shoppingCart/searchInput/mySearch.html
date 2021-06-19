@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        :root {
+            --myLight: #F7F7EE;
+            --myPink: #FDD2BB;
+            --myDark: #383844;
+            --myRed: #E64B4B;
+            --myGray: #CDCDD2;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--myPink);
+        }
+
+        .search-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            height: 40px;
+            border-radius: 40px;
+            /* border: 1px solid var(--myDark); */
+        }
+
+        .search-box:hover>.search-txt {
+            width: 200px;
+            padding: 0 20px;
+        }
+
+        /* .search-box:hover>.search-btn {
+            background: white;
+        } */
+
+        .search-btn {
+            color: var(--myDark);
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--myLight);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            /* border: 1px solid var(--myDark); */
+        }
+
+        .search-txt {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: var(--myDark);
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 40px;
+            /* width: 200px; */
+            width: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="search-box">
+        <input class="search-txt" type="text" name="" placeholder="type to search">
+        <a class="search-btn" href="#">
+            <i class="fas fa-search"></i>
+        </a>
+    </div>
+</body>
+
+</html>
