@@ -289,7 +289,8 @@ nav .container-fluid {
 
 .itemRow {
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    padding:40px 15px 40px 0;
     background-color: #fff;
     /* border-bottom: 1px solid var(--myDark); */
     border-top: 1px solid var(--myDark);
@@ -300,6 +301,13 @@ nav .container-fluid {
     height: 130px;
     background-color: #ccc;
     /* margin-left: 105px; */
+}
+.itemSubtotal {
+    margin-right: 100px;
+}
+.delOne {
+    top: 0;
+    right: 0;
 }
 .scBtn:hover {
     background-color: var(--myRed);

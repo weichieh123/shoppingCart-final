@@ -95,7 +95,7 @@
                     <i class="fas fa-trash ml-auto p-3 scBtn"></i>
                 </div>
                 <!-- 商品列表 -->
-                <div class="d-flex itemRow align-items-center justify-content-between">
+                <div class="d-flex itemRow align-items-center justify-content-between position-relative">
                     <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
                     <div class="myCheckbox selectOne ml-3"></div>
                     <div class="item d-flex align-items-center mr-5">
@@ -110,11 +110,13 @@
                         <div class="bd1 p-2">1</div>
                         <div class="bd1 p-2 scBtn scBtnAdd">+</div>
                     </div>
-                    <div class="bd1">$ 600</div>
-                    <i class="fas fa-times align-self-start p-3 scBtn"></i>
+                    <div class="itemSubtotal bd1">$ 600</div>
+                    <div class="delOne position-absolute">
+                        <i class="fas fa-times p-3 scBtn "></i>
+                    </div>
                 </div>
                 <!-- 商品列表 -->
-                <div class="d-flex itemRow align-items-center justify-content-between">
+                <div class="d-flex itemRow align-items-center justify-content-between position-relative">
                     <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
                     <div class="myCheckbox selectOne ml-3"></div>
                     <div class="item d-flex align-items-center mr-5">
@@ -129,9 +131,15 @@
                         <div class="bd1 p-2">1</div>
                         <div class="bd1 p-2 scBtn scBtnAdd">+</div>
                     </div>
-                    <div class="bd1">$ 600</div>
-                    <i class="fas fa-times align-self-start p-3 scBtn"></i>
+                    <div class="itemSubtotal bd1">$ 600</div>
+                    <div class="delOne position-absolute">
+                        <i class="fas fa-times p-3 scBtn "></i>
+                    </div>
                 </div>
+                
+            </div>
+            <!-- 總金額 -->
+            <div class="col-10 mx-auto px-0">
                 <div class="d-flex flex-column align-items-end my-5">
                     <div class="mb-0 totalPriceFont">共<span>2</span>件商品</div>
                     <div class="mb-0 totalPriceFont">小計 NT$<span>1260</span>元</div>
