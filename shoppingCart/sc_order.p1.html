@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>sc order p1</title>
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../styleguide/style-guide.css">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div class="bgMountainRow container-fluid p-0">
+        <div class="bgMountain position-absolute">
+            <img src="../public/img/bgMountain.svg" alt="">
+        </div>
+    </div>
+
+
+    <content>
+        <div class="container-fluid">
+            <!-- 購物車流程 -->
+            <div class="col-10 px-0 d-flex mx-auto justify-content-center">
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle stepActive"></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <div class="stepFont">確認購物車</div>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle "></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <div class="stepFont">物流選擇 </div>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle "></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <div class="stepFont">填寫資料</div>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle "></i>
+                    </div>
+                    <div class="stepFont">完成訂購</div>
+                </div>
+
+            </div>
+
+            <!---------------- 確認購物車 ---------------->
+            <!-- label -->
+            <div class="col-10 mx-auto px-0">
+                <div class="myLabelGroup d-flex">
+                    <div class="labelSquare bg-light">
+                        <div class="lableName">商品</div>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                    <div class="labelSquare">
+                        <div class="lableName">訂閱</div>
+                        <div class="labelTriangle"></div>
+                    </div>
+                    <div class="labelSquare bg-light">
+                        <div class="lableName">活動</div>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- 全選bar -->
+            <div class="col-10 mx-auto px-0 shadow-sm ">
+                <div class="d-flex select-bar align-items-center">
+                    <div id="selectAll" class="myCheckbox selectAll ml-3"></div>
+                    <div class="myh5 m-4">全選</div>
+                    <i class="fas fa-trash ml-auto p-3 scBtn"></i>
+                </div>
+                <!-- 商品列表 -->
+                <div class="d-flex itemRow align-items-center justify-content-between position-relative">
+                    <!-- <input class="selectOne ml-3" type="checkbox" name="selectOne" id="item2"> -->
+                    <div class="myCheckbox selectOne ml-3"></div>
+                    <div class="item d-flex align-items-center mr-5">
+                        <div class="itemPic"></div>
+                        <div class="ml-5 scOrderItem">
+                            <div class="myh5 mb-2">【訂閱組合】</div>
+                            <div class="bd2 px-4 d-flex justify-content-between">
+                                <div class="py-1 mr-5">日常組合</div>
+                                <div class="py-1">(1月份)</div>
+                            </div>
+                            <div class="bd2 px-4 d-flex justify-content-between">
+                                <div class="py-1 mr-5">21CM衛生棉</div>
+                                <div class="py-1">(3個)</div>
+                            </div>
+                            <div class="bd2 px-4 d-flex justify-content-between">
+                                <div class="py-1 mr-5">25CM衛生棉</div>
+                                <div class="py-1">(5個)</div>
+                            </div>
+                            <div class="bd2 px-4 d-flex justify-content-between">
+                                <div class="py-1 mr-5">夜用衛生棉</div>
+                                <div class="py-1">(1個)</div>
+                            </div>
+                            <div class="bd2 px-4 d-flex justify-content-between">
+                                <div class="py-1 mr-5">衛生棉條</div>
+                                <div class="py-1">(5個)</div>
+                            </div>
+                            <div class="bd2 px-4 d-flex justify-content-between">
+                                <div class="py-1 mr-5">環保組合(月亮褲)</div>
+                                <div class="py-1">(1個)</div>
+                            </div>
+
+                            
+
+
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="bd1 p-2 scBtn scBtnSub">-</div>
+                        <div class="bd1 p-2">1</div>
+                        <div class="bd1 p-2 scBtn scBtnAdd">+</div>
+                    </div>
+                    <div class="itemSubtotal bd1">$ 2600</div>
+                    <div class="delOne position-absolute">
+                        <i class="fas fa-times p-3 scBtn "></i>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 總金額 -->
+            <div class="col-10 mx-auto px-0">
+                <div class="d-flex flex-column align-items-end my-5">
+                    <div class="mb-0 totalPriceFont">共<span>1</span>件訂閱</div>
+                    <div class="mb-0 totalPriceFont">小計 NT$<span>2600</span>元</div>
+                </div>
+            </div>
+
+
+            <!-- 按鈕列 -->
+            <div class="col-10 mx-auto">
+                <div class="d-flex btnRow justify-content-between mb-2">
+                    <div class="bg-green p-4 fitContent">
+                    </div>
+                    <div class="bg-green p-4 fitContent">
+                        <button class="btn-soft-green">下一步</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 廣告列 -->
+        <div class="col-10 mx-auto mb-5">
+            <div class="d-flex cb4 py-5 position-relative justify-content-center align-items-center">
+                <div class="hotTag position-absolute d-flex align-items-center">
+                    <div class="hotTagTitle ">HOT</div>
+                    <img class="w-100" src="../public/img/ribbon-silhouette.svg" alt="">
+                </div>
+                <div class="ad-arrow">
+                    <img class="w-100" src="../public/img/arrowLeft.svg" alt="">
+                </div>
+                <div class="itemPic mx-3"></div>
+                <div class="itemPic mx-3"></div>
+                <div class="itemPic mx-3"></div>
+                <div class="itemPic mx-3"></div>
+                <div class="ad-arrow">
+                    <img class="w-100" src="../public/img/arrowRight.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </content>
+
+
+    <script src="../public/lib/jquery-3.6.0.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>

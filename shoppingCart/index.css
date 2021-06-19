@@ -413,3 +413,9 @@ nav .container-fluid {
 .ad-arrow {
     width: 15px;
 }
+
+
+/* Order相關 *//* Order相關 *//* Order相關 *//* Order相關 */
+.scOrderItem>.bd2:nth-of-type(even) {
+    background-color: rgba(205,205,210,0.5);
+}
