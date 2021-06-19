@@ -60,7 +60,7 @@
     right: 0;
 }
 body * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -396,7 +396,7 @@ nav .container-fluid {
 
 .dropdownItemsPanel {
     /* 預設隱藏商品細項 */
-    /* display: none; */
+    display: none;
 }
 #dropdownBtn.down {
     transform: rotate(180deg);

@@ -29,7 +29,7 @@
             <img src="../public/img/bgMountain.svg" alt="">
         </div>
     </div>
-    
+
 
     <content>
         <div class="container-fluid">
@@ -65,7 +65,7 @@
                     </div>
                     <div class="stepFont">完成訂購</div>
                 </div>
-                
+
             </div>
             <!-- label -->
             <div class="col-10 mx-auto px-0">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <!---------------- 選擇物流方式 ---------------->
             <div class="col-10 mx-auto px-0 shadow-sm ">
                 <!-- 物流方式bar -->
@@ -94,8 +94,9 @@
                 <!-- 購物車內容列表 -->
                 <div class="paymentSelRow d-flex flex-column justify-content-around">
                     <div class="mb-3">
-                        <div class="dropdownItems d-flex justify-content-between align-items-center pr-3 pb-2 ml-4 titleDivider">
-                            <div class="myh5"><span class="myh5">●</span>&nbsp&nbsp購物車商品項目：（總金額1200元）</div>
+                        <div
+                            class="dropdownItems d-flex justify-content-between align-items-center pr-3 pb-2 ml-4 titleDivider">
+                            <div class="myh5"><span class="myh5">●</span>&nbsp&nbsp購物車商品項目：（小計 $1200元）</div>
                             <img id="dropdownBtn" class="icon18px" src="../public/img/dropdownBtn.svg" alt="">
                         </div>
                         <div class="dropdownItemsPanel">
@@ -127,12 +128,14 @@
                             <div class="bd2 mb-0 ml-4">宅配(未滿900元，運費120元)</div>
                         </div>
                     </div>
-
-                    <div class="d-flex align-items-center justify-content-end my-5">
-                        <div class="mb-0 totalPriceFont">總計 NT$ 1260</div>
-                    </div>
                 </div>
+            </div>
 
+            <!-- 總金額：商品小計 + 運費 -->
+            <div class="col-10 mx-auto px-0">
+                <div class="d-flex flex-column align-items-end my-5">
+                    <div class="mb-0 totalPriceFont">總計 NT$<span>1260</span>元</div>
+                </div>
             </div>
 
             <!-- 按鈕列 -->
@@ -155,7 +158,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
-    
+
 </body>
 
 </html>
