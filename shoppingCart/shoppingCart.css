@@ -1,8 +1,4 @@
 @charset "UTF-8";
-body * {
-  /* outline: 1px solid red; */
-}
-
 .moon {
   width: 50px;
   height: 50px;
@@ -142,7 +138,7 @@ body {
 
 @media (max-width: 576px) {
   .myh5 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
 }
@@ -470,7 +466,7 @@ nav .container-fluid {
   width: 134px;
   height: 50px;
   background-color: #FDD2BB;
-  margin: 0 40px 0 0;
+  margin: 0 36px 0 0;
 }
 
 .labelSquare.bgWhite {
@@ -489,7 +485,7 @@ nav .container-fluid {
 .labelTriangleWhite {
   position: absolute;
   left: -36px;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #fff transparent transparent;
   border-style: solid solid solid solid;
   /* 設定邊框大小可拼湊出任意形狀的三角形 */
   border-width: 50px 36px 0px 0px;
@@ -497,12 +493,19 @@ nav .container-fluid {
 
 .lableName {
   position: absolute;
-  left: 40px;
+  left: 36px;
   margin: 0;
   font-family: 'Noto Sans TC', sans-serif;
   font-size: 20px;
   font-weight: bold;
   line-height: 50px;
+}
+
+@media (max-width: 992px) {
+  .lableName {
+    font-size: 16px;
+    left: 15px;
+  }
 }
 
 /* =============label區塊 end============== */
@@ -545,6 +548,6 @@ nav .container-fluid {
 /* Order相關 */
 /* Order相關 */
 .scOrderItem > .bd2:nth-of-type(even) {
-  background-color: rgba(205, 205, 210, 0.5);
+  background-color: rgba(205, 205, 210, 0.35);
 }
 /*# sourceMappingURL=shoppingCart.css.map */

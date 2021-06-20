@@ -1,6 +1,7 @@
-body * {
-    /* outline: 1px solid red; */
-}
+// body * {
+//      outline: 1px solid red; 
+// }
+
 $stepFont: 20px;
 $stepFont-lg: 16px;
 $stepFont-sm: 12px;
@@ -9,7 +10,7 @@ $myPink: #FDD2BB;
 $myDark: #383844;
 $myRed: #E64B4B;
 $myGray: #CDCDD2;
-$myWhite: $myWhite;
+$myWhite: #fff;
 
 @mixin sizeXl {
     @media (max-width:1200px){
@@ -146,7 +147,7 @@ body {
         font-weight: bold;
     }
     @include sizeSm{
-        font-size: 12px;
+        font-size: 14px;
         font-weight: bold;
     }
 }
@@ -426,17 +427,22 @@ nav .container-fluid {
 }
 
 /* =============label區塊============== */
+$labelSquareW: 134px;
+$labelSquareH: 50px;
+$labelTriW: 36px;
+$labelTriH: $labelSquareH;
+
 .myLabelGroup {
-    padding: 0 36px;
+    padding: 0 $labelTriW;
     margin-top: 100px;
 }
 
 .labelSquare {
     position: relative;
-    width: 134px;
-    height: 50px;
+    width: $labelSquareW;
+    height: $labelSquareH;
     background-color: $myPink;
-    margin: 0 40px 0 0;
+    margin: 0 $labelTriW 0 0;
 }
 .labelSquare.bgWhite {
     background-color: $myWhite;
@@ -444,30 +450,34 @@ nav .container-fluid {
 
 .labelTriangle {
     position: absolute;
-    left: -36px;
+    left: -$labelTriW;
     border-color: transparent $myPink transparent transparent;
     border-style: solid solid solid solid;
     /* 設定邊框大小可拼湊出任意形狀的三角形 */
-    border-width: 50px 36px 0px 0px;
+    border-width: $labelTriH $labelTriW 0px 0px;
 }
 
 .labelTriangleWhite {
     position: absolute;
-    left: -36px;
+    left: -$labelTriW;
     border-color: transparent $myWhite transparent transparent;
     border-style: solid solid solid solid;
     /* 設定邊框大小可拼湊出任意形狀的三角形 */
-    border-width: 50px 36px 0px 0px;
+    border-width: $labelTriH $labelTriW 0px 0px;
 }
 
 .lableName {
     position: absolute;
-    left: 40px;
+    left: $labelTriW;
     margin: 0;
     font-family: 'Noto Sans TC', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    line-height: 50px;
+    line-height: $labelSquareH;
+    @include sizeLg{
+        font-size: 16px;
+        left: 15px;
+    }
 }
 
 /* =============label區塊 end============== */
