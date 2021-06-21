@@ -31,3 +31,7 @@ $('.myRadio').click(function (){
         $(this).parent().siblings().children().first().removeClass("checked");
     }
 });
+
+// $('*').on('mouseover', function(){
+//     $(this).addClass("animate__animated animate__pulse")
+// })
