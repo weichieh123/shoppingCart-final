@@ -372,10 +372,18 @@ nav .container-fluid {
     width: 195px;
     height: 130px;
     background-color: #ccc;
-    /* margin-left: 105px; */
+     margin-left: 7vw; 
     @include sizeLg {
         display: none;
     }
+}
+.itemName {
+    margin-left: 7vw; 
+
+}
+.qtyWrap {
+    margin-right: 7vw; 
+
 }
 /* @media screen and (max-width: 992px) {
     .itemPic {
@@ -431,6 +439,7 @@ $labelSquareW: 134px;
 $labelSquareH: 50px;
 $labelTriW: 36px;
 $labelTriH: $labelSquareH;
+$labelName: 20px;
 
 .myLabelGroup {
     padding: 0 $labelTriW;
@@ -443,6 +452,12 @@ $labelTriH: $labelSquareH;
     height: $labelSquareH;
     background-color: $myPink;
     margin: 0 $labelTriW 0 0;
+    @include sizeLg{
+        width: 0.8*$labelSquareW;
+        height: 0.8*$labelSquareH;
+        margin: 0 0.8*$labelTriW 0 0;
+
+    }
 }
 .labelSquare.bgWhite {
     background-color: $myWhite;
@@ -455,6 +470,11 @@ $labelTriH: $labelSquareH;
     border-style: solid solid solid solid;
     /* 設定邊框大小可拼湊出任意形狀的三角形 */
     border-width: $labelTriH $labelTriW 0px 0px;
+    @include sizeLg{
+        left: -0.8*$labelTriW;
+        border-width: 0.8*$labelTriH 0.8*$labelTriW 0px 0px;
+    }
+
 }
 
 .labelTriangleWhite {
@@ -464,6 +484,10 @@ $labelTriH: $labelSquareH;
     border-style: solid solid solid solid;
     /* 設定邊框大小可拼湊出任意形狀的三角形 */
     border-width: $labelTriH $labelTriW 0px 0px;
+    @include sizeLg{
+        left: -0.8*$labelTriW;
+        border-width: 0.8*$labelTriH 0.8*$labelTriW 0px 0px;
+    }
 }
 
 .lableName {
@@ -471,12 +495,14 @@ $labelTriH: $labelSquareH;
     left: $labelTriW;
     margin: 0;
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 20px;
+    font-size: $labelName;
     font-weight: bold;
     line-height: $labelSquareH;
     @include sizeLg{
-        font-size: 16px;
-        left: 15px;
+        left: 0.8*$labelTriW;
+        font-size: 0.8*$labelName;
+        line-height: 0.8*$labelSquareH;
+
     }
 }
 
