@@ -1,0 +1,550 @@
+// body * {
+//      outline: 1px solid red; 
+// }
+
+$stepFont: 20px;
+$stepFont-lg: 16px;
+$stepFont-sm: 12px;
+$myLight: #F7F7EE;
+$myPink: #FDD2BB;
+$myDark: #383844;
+$myRed: #E64B4B;
+$myGray: #CDCDD2;
+$myWhite: #fff;
+
+@mixin sizeXl {
+    @media (max-width:1200px){
+        @content;
+    }
+}
+@mixin sizeLg {
+    @media (max-width:992px){
+        @content;
+    }
+}
+@mixin sizeMd {
+    @media (max-width:768px){
+        @content;
+    }
+}
+@mixin sizeSm {
+    @media (max-width:576px){
+        @content;
+    }
+}
+
+// *:hover {
+//     animation: pulse;
+//     animation-duration: .5s;
+// }
+
+.moon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    box-shadow: 15px -15px;
+    position: absolute;
+    margin: 0 100px;
+    animation: moonmove 3s infinite linear;
+    animation-direction: alternate;
+}
+
+@keyframes moonmove {
+    0% {
+        box-shadow: 15px -15px #f5a693;
+        transform: translateX(-15px) translateY(15px);
+    }
+
+    100% {
+        box-shadow: -30px 30px #bbd0fd;
+        transform: translateX(30px) translateY(-30px);
+    }
+}
+
+
+/* body .container-fluid {
+    background-color: $myLight;
+} */
+
+.search {
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid $myDark;
+    margin-left: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.search input {
+    width: 150px;
+    height: 30px;
+
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $myDark;
+    background-color: $myLight;
+    position: absolute;
+    right: 0;
+}
+
+
+body {
+    background-color: $myLight;
+    /* 之後要刪 */
+    padding-top: 100px;
+}
+
+.bgMountainRow {
+    overflow: hidden;
+}
+
+.bgMountain {
+    left: 0;
+    top: 130px;
+}
+
+.bgMountain img {
+    width: 100%;
+}
+
+/*======== 共同class */
+.divider {
+    padding-bottom: 50px;
+    border-bottom: 1px solid $myDark;
+}
+
+.fitContent {
+    width: fit-content;
+}
+
+/*========= 共同class */
+/*================= fonts =======================*/
+.myh2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 48px;
+    font-weight: lighter;
+}
+
+.myh3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.myh4 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.myh5 { 
+    /* 桌機版標題 */
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    font-weight: bold;
+    @include sizeLg{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    @include sizeSm{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+.myh5 span {
+    color: $myGray;
+}
+.titleDivider {
+    /* 桌機版標題橫線 */
+    padding-bottom: 8px;
+    border-bottom: 1px solid $myGray;
+}
+.myInputLabel { 
+    /* 欄位名稱 */
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    font-weight: normal;
+    @include sizeLg{
+        font-size: 16px;
+        font-weight: normal;
+    }
+    @include sizeSm{
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+
+/* .myh6 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 18px;
+    font-weight: bold;
+} */
+
+.bd1 {
+    /* 商品數量+- */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.bd2 {
+    /* 內文 */
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    @include sizeLg{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+/* span {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    font-weight: italic;
+} */
+
+/* .btnFont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+} */
+
+.totalPriceFont {
+    /* 總計 */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.totalPriceFont span {
+    color: $myRed;
+    font-weight: bold;
+}
+.stepFont {
+    /* 購物車流程 */
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: $stepFont;
+    font-weight: bold;
+    margin-left: -$stepFont;
+    @include sizeLg{
+        font-size: $stepFont-lg;
+        font-weight: bold;
+        margin-left: -$stepFont-lg;
+    }
+    @include sizeSm{
+        font-size: $stepFont-sm;
+        font-weight: bold;
+        margin-left: -$stepFont-sm;  
+    }
+    
+}
+
+/*================= fonts end =======================*/
+/*================= 購物車流程 =======================*/
+.stepCircle {
+    width: 2*$stepFont;
+    height: 2*$stepFont;
+    background-color: $myPink;
+    border-radius: 50%;
+    margin: 0 5px;
+    @include sizeLg{
+        width: 2*$stepFont-lg;
+        height: 2*$stepFont-lg;
+    }
+    @include sizeSm{
+        width: 2*$stepFont-sm;
+        height: 2*$stepFont-sm;
+    }
+}
+.stepActive {
+    background-color: $myRed;
+}
+.stepLine {
+    width: 6*$stepFont;
+    height: 1px;
+    background-color: $myDark;
+    @include sizeLg{
+        width: 6*$stepFont-lg;
+    }
+    @include sizeSm{
+        width: 6*$stepFont-sm;
+    }
+
+}
+.stepArrow {
+    border: solid $myDark;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 7px;
+}
+.stepArrow.right {
+    margin-left: -16px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+/*================= 購物車流程end =======================*/
+
+/* bootstrap nav cart */
+.dropdown-menu {
+    margin-left: -50px;
+}
+
+/* bootstrap nav cart end */
+
+nav .container-fluid {
+    background-color: $myLight;
+    height: 120px;
+}
+
+/* .wrap {
+    width: 1160px;
+    margin: 0 auto;
+} */
+
+.icon15px {
+    width: 15px;
+    height: 15px;
+}
+
+.icon18px {
+    width: 18px;
+    height: 18px;
+}
+
+.icon20px {
+    width: 20px;
+    height: 20px;
+}
+
+.hotTag {
+    width: 82px;
+    left: 40px;
+    top: -42px;
+}
+.hotTagTitle {
+    z-index: 90;
+    color: $myWhite;
+    margin-right: -50px;
+    margin-bottom: 3px;
+}
+
+
+/*======== cart item ================*/
+.select-bar {
+    width: 100%;
+    height: 50px;
+    background-color: $myPink;
+}
+
+.myCheckbox, .myRadio {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $myWhite;
+    border: 1px solid $myDark;
+}
+.myCheckbox:hover, .myRadio:hover {
+    background-color: $myRed;
+    border: none;
+    cursor: pointer;
+}
+.myCheckbox.checked, .myRadio.checked {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: $myRed;
+    border: none;
+}
+
+.itemRow {
+    width: 100%;
+    /* height: 200px; */
+    padding:40px 15px 40px 0;
+    background-color: $myWhite;
+}
+.itemRow.bdTop {
+    border-top: 1px solid $myDark;
+}
+
+.itemPic {
+    width: 195px;
+    height: 130px;
+    background-color: #ccc;
+     margin-left: 7vw; 
+    @include sizeLg {
+        display: none;
+    }
+}
+.itemName {
+    margin-left: 7vw; 
+
+}
+.qtyWrap {
+    margin-right: 7vw; 
+
+}
+/* @media screen and (max-width: 992px) {
+    .itemPic {
+        display: none;
+    }
+} */
+.itemSubtotal {
+    /* margin-right: 80px; */
+    margin-right: 8vw;
+}
+
+.delOne {
+    top: 0;
+    right: 0;
+}
+.scBtn:hover {
+    background-color: $myRed;
+    color: $myWhite;
+    cursor: pointer;
+}
+
+.btnRow {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+/* .primaryBtn {
+    width: 200px;
+    height: 50px;
+    background-color: $myPink;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 50px;
+} */
+
+.paymentSelRow {
+    width: 100%;
+    background-color: $myWhite;
+    padding: 50px;
+    @include sizeLg{
+        padding: 30px;
+    }
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* =============label區塊============== */
+$labelSquareW: 134px;
+$labelSquareH: 50px;
+$labelTriW: 36px;
+$labelTriH: $labelSquareH;
+$labelName: 20px;
+
+.myLabelGroup {
+    padding: 0 $labelTriW;
+    margin-top: 100px;
+}
+
+.labelSquare {
+    position: relative;
+    width: $labelSquareW;
+    height: $labelSquareH;
+    background-color: $myPink;
+    margin: 0 $labelTriW 0 0;
+    @include sizeLg{
+        width: 0.8*$labelSquareW;
+        height: 0.8*$labelSquareH;
+        margin: 0 0.8*$labelTriW 0 0;
+
+    }
+}
+.labelSquare.bgWhite {
+    background-color: $myWhite;
+}
+
+.labelTriangle {
+    position: absolute;
+    left: -$labelTriW;
+    border-color: transparent $myPink transparent transparent;
+    border-style: solid solid solid solid;
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: $labelTriH $labelTriW 0px 0px;
+    @include sizeLg{
+        left: -0.8*$labelTriW;
+        border-width: 0.8*$labelTriH 0.8*$labelTriW 0px 0px;
+    }
+
+}
+
+.labelTriangleWhite {
+    position: absolute;
+    left: -$labelTriW;
+    border-color: transparent $myWhite transparent transparent;
+    border-style: solid solid solid solid;
+    /* 設定邊框大小可拼湊出任意形狀的三角形 */
+    border-width: $labelTriH $labelTriW 0px 0px;
+    @include sizeLg{
+        left: -0.8*$labelTriW;
+        border-width: 0.8*$labelTriH 0.8*$labelTriW 0px 0px;
+    }
+}
+
+.lableName {
+    position: absolute;
+    left: $labelTriW;
+    margin: 0;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: $labelName;
+    font-weight: bold;
+    line-height: $labelSquareH;
+    @include sizeLg{
+        left: 0.8*$labelTriW;
+        font-size: 0.8*$labelName;
+        line-height: 0.8*$labelSquareH;
+
+    }
+}
+
+/* =============label區塊 end============== */
+/* =============商品下拉區塊============== */
+.dropdownItems {
+    cursor: pointer;
+}
+.dropdownItem:nth-of-type(even) {
+    /* 商品偶數加背景色 */
+    background-color: rgba(205,205,210,0.35);
+}
+
+.dropdownItemsPanel {
+    /* 預設隱藏商品細項 */
+    display: none;
+}
+#dropdownBtn.down {
+    transform: rotate(180deg);
+}
+
+/* =============商品下拉區塊end============== */
+/* =============map區塊============== */
+.mapSquare {
+    width: 150px;
+    height: 150px;
+    background-color: $myDark;
+    margin-left: 150px;
+}
+/* =============map區塊end============== */
+
+.ad-arrow {
+    width: 15px;
+}
+
+
+/* Order相關 *//* Order相關 *//* Order相關 *//* Order相關 */
+.scOrderItem>.bd2:nth-of-type(even) {
+    background-color: rgba(205,205,210,0.35);
+}
