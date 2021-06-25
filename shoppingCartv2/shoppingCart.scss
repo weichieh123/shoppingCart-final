@@ -1,15 +1,16 @@
-// body * {
-//      outline: 1px solid red; 
-// }
+body * {
+    //  outline: 1px solid red; 
+}
 
 $stepFont: 20px;
 $stepFont-lg: 16px;
 $stepFont-sm: 12px;
 $myLight: #F7F7EE;
 $myPink: #FDD2BB;
+$myPinkOpa: #fdd2bb4d;
 $myDark: #383844;
 $myRed: #E64B4B;
-$myGray: #CDCDD2;
+$myGray: #9B9B9B;
 $myWhite: #fff;
 
 @mixin sizeXl {
@@ -62,10 +63,6 @@ $myWhite: #fff;
 }
 
 
-/* body .container-fluid {
-    background-color: $myLight;
-} */
-
 .search {
     width: 150px;
     height: 30px;
@@ -92,7 +89,6 @@ $myWhite: #fff;
     right: 0;
 }
 
-
 body {
     background-color: $myLight;
     /* 之後要刪 */
@@ -112,7 +108,7 @@ body {
     width: 100%;
 }
 
-/*======== 共同class */
+/*======== 共同class ==================*/
 .divider {
     padding-bottom: 50px;
     border-bottom: 1px solid $myDark;
@@ -122,8 +118,8 @@ body {
     width: fit-content;
 }
 
-/*========= 共同class */
-/*================= fonts =======================*/
+/*========= 共同class ==================*/
+/*=========== 字型 =======================*/
 .myh2 {
     font-family: 'DM Serif Display', serif;
     font-size: 48px;
@@ -178,6 +174,12 @@ body {
         font-weight: normal;
     }
 }
+.barTitleFont {
+    /* bar標題 */
+    font-family: 'Noto Sans TC', serif;
+    font-size: 18px;
+    font-weight: normal;
+}
 
 /* .myh6 {
     font-family: 'Noto Serif TC', serif;
@@ -185,6 +187,26 @@ body {
     font-weight: bold;
 } */
 
+.sc-qtyFont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: medium;
+}
+
+.sc-priceFont {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sc-formTitle {
+    font-family: 'Noto Sans TC', serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: $myGray;
+    background-color: $myWhite;
+    text-align: center;
+}
 .bd1 {
     /* 商品數量+- */
     font-family: 'Montserrat', sans-serif;
@@ -203,29 +225,36 @@ body {
     }
 }
 
-/* span {
-    font-family: 'DM Serif Display', serif;
-    font-size: 28px;
-    font-weight: italic;
-} */
-
-/* .btnFont {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-} */
-
-.totalPriceFont {
-    /* 總計 */
-    text-align: center;
+.totalQtyFont {
+    /* 總數量 */
+    text-align: right;
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: normal;
     letter-spacing: 3px;
 }
-.totalPriceFont span {
+.totalQtyFont span {
     color: $myRed;
-    font-weight: bold;
+    font-weight: medium;
+}
+
+.totalPriceFont { 
+    /* 總金額 */
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.totalPriceFont-med {
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    font-weight: medium;
+    letter-spacing: 3px;
+}
+.totalPriceFont-med span {
+    color: $myRed;
 }
 .stepFont {
     /* 購物車流程 */
@@ -246,7 +275,7 @@ body {
     
 }
 
-/*================= fonts end =======================*/
+/*================= 字型 end =======================*/
 /*================= 購物車流程 =======================*/
 .stepCircle {
     width: 2*$stepFont;
@@ -290,24 +319,19 @@ body {
     -webkit-transform: rotate(-45deg);
   }
 /*================= 購物車流程end =======================*/
+/*================= Navbar =======================*/
 
-/* bootstrap nav cart */
-.dropdown-menu {
-    margin-left: -50px;
-}
 
-/* bootstrap nav cart end */
-
-nav .container-fluid {
-    background-color: $myLight;
-    height: 120px;
-}
-
-/* .wrap {
-    width: 1160px;
-    margin: 0 auto;
-} */
-
+// .dropdown-menu {
+//         margin-left: -50px;
+//     }
+    
+// nav .container-fluid {
+//         background-color: $myLight;
+//         height: 120px;
+//     }
+/*================= Navbar end =======================*/
+        
 .icon15px {
     width: 15px;
     height: 15px;
@@ -326,7 +350,7 @@ nav .container-fluid {
 .hotTag {
     width: 82px;
     left: 40px;
-    top: -42px;
+    top: -102px;
 }
 .hotTagTitle {
     z-index: 90;
@@ -342,6 +366,7 @@ nav .container-fluid {
     height: 50px;
     background-color: $myPink;
 }
+/*================= Radio Checkbox =======================*/
 
 .myCheckbox, .myRadio {
     width: 25px;
@@ -363,67 +388,62 @@ nav .container-fluid {
     border: none;
 }
 
+/*================= Radio Checkbox end ===================*/
 .itemRow {
     width: 100%;
-    /* height: 200px; */
-    padding:40px 15px 40px 0;
+    padding:40px 0;
     background-color: $myWhite;
 }
-.itemRow.bdTop {
-    border-top: 1px solid $myDark;
+.bdTop {
+    /* 上方分隔線*/
+    border-top: 1px solid #CDDDD2;
+}
+.itemRow.selected {
+    /* 商品被勾選的時候背景色*/
+    background-color: $myPinkOpa;
 }
 
 .itemPic {
     width: 195px;
     height: 130px;
     background-color: #ccc;
-     margin-left: 7vw; 
-    @include sizeLg {
-        display: none;
-    }
+     margin-left: 3vw; 
+    // @include sizeLg {
+    //     display: none;
+    // }
 }
 .itemName {
-    margin-left: 7vw; 
+    margin-left: 2vw; 
 
 }
-.qtyWrap {
-    margin-right: 7vw; 
 
-}
 /* @media screen and (max-width: 992px) {
     .itemPic {
         display: none;
     }
 } */
-.itemSubtotal {
-    /* margin-right: 80px; */
-    margin-right: 8vw;
-}
 
 .delOne {
+    /* X按鈕 */
     top: 0;
     right: 0;
 }
 .scBtn:hover {
+    /* 所有按鈕的效果 */
     background-color: $myRed;
     color: $myWhite;
     cursor: pointer;
 }
-
+.priceRow {
+    /* 總金額列 */
+    background-color: $myWhite;
+}
 .btnRow {
+    /* 按鈕列 */
     margin-top: 100px;
     margin-bottom: 100px;
     padding-bottom: 100px;
 }
-
-/* .primaryBtn {
-    width: 200px;
-    height: 50px;
-    background-color: $myPink;
-    border-radius: 40px;
-    text-align: center;
-    line-height: 50px;
-} */
 
 .paymentSelRow {
     width: 100%;
@@ -433,7 +453,6 @@ nav .container-fluid {
         padding: 30px;
     }
 }
-
 
 .dropdown-toggle::after {
     display: none;
