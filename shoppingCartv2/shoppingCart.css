@@ -88,11 +88,6 @@ body {
 }
 
 /*======== 共同class ==================*/
-.divider {
-  padding-bottom: 50px;
-  border-bottom: 1px solid #383844;
-}
-
 .fitContent {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -119,35 +114,31 @@ body {
   font-weight: bold;
 }
 
-.myh5 {
+.scTitle {
   /* 桌機版標題 */
-  font-family: 'Noto Serif TC', serif;
+  font-family: 'Noto Sans TC', serif;
   font-size: 20px;
   font-weight: bold;
 }
 
 @media (max-width: 992px) {
-  .myh5 {
+  .scTitle {
     font-size: 16px;
     font-weight: bold;
   }
 }
 
 @media (max-width: 576px) {
-  .myh5 {
+  .scTitle {
     font-size: 14px;
     font-weight: bold;
   }
 }
 
-.myh5 span {
-  color: #9B9B9B;
-}
-
 .titleDivider {
   /* 桌機版標題橫線 */
   padding-bottom: 8px;
-  border-bottom: 1px solid #9B9B9B;
+  border-bottom: 1px solid #CDCDD2;
 }
 
 .myInputLabel {
@@ -176,6 +167,7 @@ body {
   font-family: 'Noto Sans TC', serif;
   font-size: 18px;
   font-weight: normal;
+  color: #383844;
 }
 
 /* .myh6 {
@@ -183,16 +175,42 @@ body {
     font-size: 18px;
     font-weight: bold;
 } */
+.sc-describeFont {
+  font-family: 'Noto Sans TC', serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #383844;
+}
+
+.sc-describeFont span {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sc-nameFont {
+  /* 商品名稱 */
+  font-family: 'Noto Sans TC', serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #383844;
+}
+
 .sc-qtyFont {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: medium;
+  color: #383844;
+}
+
+.sc-qtyFont span {
+  color: #E64B4B;
 }
 
 .sc-priceFont {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: normal;
+  text-align: center;
+  color: #383844;
 }
 
 .sc-formTitle {
@@ -204,33 +222,13 @@ body {
   text-align: center;
 }
 
-.bd1 {
-  /* 商品數量+- */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.bd2 {
-  /* 內文 */
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-@media (max-width: 992px) {
-  .bd2 {
-    font-size: 14px;
-    font-weight: bold;
-  }
-}
-
 .totalQtyFont {
   /* 總數量 */
   text-align: right;
   font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-weight: normal;
+  color: #383844;
   letter-spacing: 3px;
 }
 
@@ -245,6 +243,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
   font-weight: normal;
+  color: #383844;
   letter-spacing: 3px;
 }
 
@@ -253,6 +252,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
   font-weight: medium;
+  color: #383844;
   letter-spacing: 3px;
 }
 
@@ -266,6 +266,7 @@ body {
   font-size: 20px;
   font-weight: bold;
   margin-left: -20px;
+  color: #383844;
 }
 
 @media (max-width: 992px) {
@@ -413,7 +414,7 @@ body {
 
 .bdTop {
   /* 上方分隔線*/
-  border-top: 1px solid #CDDDD2;
+  border-top: 1px solid #CDCDD2;
 }
 
 .itemRow.selected {
@@ -426,6 +427,12 @@ body {
   height: 130px;
   background-color: #ccc;
   margin-left: 3vw;
+}
+
+.itemPic-sm {
+  width: 54px;
+  height: 54px;
+  background-color: #ccc;
 }
 
 .itemName {
@@ -471,7 +478,7 @@ body {
 .paymentSelRow {
   width: 100%;
   background-color: #fff;
-  padding: 50px;
+  padding: 50px 100px;
 }
 
 @media (max-width: 992px) {
@@ -480,8 +487,8 @@ body {
   }
 }
 
-.dropdown-toggle::after {
-  display: none;
+.dropdownIcon {
+  margin-right: -35px;
 }
 
 /* =============label區塊============== */
@@ -573,6 +580,10 @@ body {
 
 .dropdownItemsPanel {
   /* 預設隱藏商品細項 */
+  display: none;
+}
+
+.dropdownItemsTitle .sc-formTitle.hidden {
   display: none;
 }
 

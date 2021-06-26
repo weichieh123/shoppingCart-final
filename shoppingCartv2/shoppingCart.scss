@@ -12,6 +12,7 @@ $myDark: #383844;
 $myRed: #E64B4B;
 $myGray: #9B9B9B;
 $myWhite: #fff;
+$myLineGray: #CDCDD2;
 
 @mixin sizeXl {
     @media (max-width:1200px){
@@ -109,10 +110,10 @@ body {
 }
 
 /*======== 共同class ==================*/
-.divider {
-    padding-bottom: 50px;
-    border-bottom: 1px solid $myDark;
-}
+// .divider {
+//     padding-bottom: 50px;
+//     border-bottom: 1px solid $myLineGray;
+// }
 
 .fitContent {
     width: fit-content;
@@ -138,9 +139,9 @@ body {
     font-weight: bold;
 }
 
-.myh5 { 
+.scTitle { 
     /* 桌機版標題 */
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Noto Sans TC', serif;
     font-size: 20px;
     font-weight: bold;
     @include sizeLg{
@@ -152,13 +153,11 @@ body {
         font-weight: bold;
     }
 }
-.myh5 span {
-    color: $myGray;
-}
+
 .titleDivider {
     /* 桌機版標題橫線 */
     padding-bottom: 8px;
-    border-bottom: 1px solid $myGray;
+    border-bottom: 1px solid $myLineGray;
 }
 .myInputLabel { 
     /* 欄位名稱 */
@@ -179,6 +178,7 @@ body {
     font-family: 'Noto Sans TC', serif;
     font-size: 18px;
     font-weight: normal;
+    color: $myDark;
 }
 
 /* .myh6 {
@@ -186,17 +186,40 @@ body {
     font-size: 18px;
     font-weight: bold;
 } */
-
+.sc-describeFont {
+    font-family: 'Noto Sans TC', serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: $myDark; 
+}
+.sc-describeFont span{
+    font-family: 'Montserrat', sans-serif; 
+}
+.sc-nameFont {
+    /* 商品名稱 */
+    font-family: 'Noto Sans TC', serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: $myDark;
+}
 .sc-qtyFont {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: medium;
+    color: $myDark;
+
+}
+.sc-qtyFont span {
+    color: $myRed;
 }
 
 .sc-priceFont {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: normal;
+    text-align: center;
+    color: $myDark;
+
 }
 
 .sc-formTitle {
@@ -207,23 +230,23 @@ body {
     background-color: $myWhite;
     text-align: center;
 }
-.bd1 {
-    /* 商品數量+- */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-}
+// .bd1 {
+//     /* 商品數量+- */
+//     font-family: 'Montserrat', sans-serif;
+//     font-size: 18px;
+//     font-weight: normal;
+// }
 
-.bd2 {
-    /* 內文 */
-    font-family: 'Noto Sans TC', sans-serif;
-    font-size: 18px;
-    font-weight: normal;
-    @include sizeLg{
-        font-size: 14px;
-        font-weight: bold;
-    }
-}
+// .bd2 {
+//     /* 內文 */
+//     font-family: 'Noto Sans TC', sans-serif;
+//     font-size: 18px;
+//     font-weight: normal;
+//     @include sizeLg{
+//         font-size: 14px;
+//         font-weight: bold;
+//     }
+// }
 
 .totalQtyFont {
     /* 總數量 */
@@ -231,6 +254,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: normal;
+    color: $myDark;
     letter-spacing: 3px;
 }
 .totalQtyFont span {
@@ -244,6 +268,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     font-weight: normal;
+    color: $myDark;
     letter-spacing: 3px;
 }
 .totalPriceFont-med {
@@ -251,6 +276,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     font-weight: medium;
+    color: $myDark;
     letter-spacing: 3px;
 }
 .totalPriceFont-med span {
@@ -262,6 +288,7 @@ body {
     font-size: $stepFont;
     font-weight: bold;
     margin-left: -$stepFont;
+    color: $myDark;
     @include sizeLg{
         font-size: $stepFont-lg;
         font-weight: bold;
@@ -396,7 +423,7 @@ body {
 }
 .bdTop {
     /* 上方分隔線*/
-    border-top: 1px solid #CDDDD2;
+    border-top: 1px solid $myLineGray;
 }
 .itemRow.selected {
     /* 商品被勾選的時候背景色*/
@@ -411,6 +438,11 @@ body {
     // @include sizeLg {
     //     display: none;
     // }
+}
+.itemPic-sm {
+    width: 54px;
+    height: 54px;
+    background-color: #ccc;
 }
 .itemName {
     margin-left: 2vw; 
@@ -454,15 +486,17 @@ body {
 .paymentSelRow {
     width: 100%;
     background-color: $myWhite;
-    padding: 50px;
+    padding: 50px 100px;
     @include sizeLg{
         padding: 30px;
     }
 }
-
-.dropdown-toggle::after {
-    display: none;
+.dropdownIcon {
+    margin-right: -35px;
 }
+// .dropdown-toggle::after {
+//     display: none;
+// }
 
 /* =============label區塊============== */
 $labelSquareW: 134px;
@@ -548,6 +582,9 @@ $labelName: 20px;
 
 .dropdownItemsPanel {
     /* 預設隱藏商品細項 */
+    display: none;
+}
+.dropdownItemsTitle .sc-formTitle.hidden {
     display: none;
 }
 #dropdownBtn.down {

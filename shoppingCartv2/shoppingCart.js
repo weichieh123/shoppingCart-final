@@ -3,6 +3,7 @@ $("document").ready(function () {
   $(".dropdownItems").click(function () {
     $(".dropdownItemsPanel").toggle();
     $("#dropdownBtn").toggleClass("down");
+    $('.dropdownItemsTitle .sc-formTitle').toggleClass('hidden');
   });
 });
 
