@@ -615,6 +615,12 @@ $labelName: 20px;
     margin: 0 auto;
 }
 
+.creditCard {
+    width: 100%;
+    height: 280px;
+    background-color: $myDark;
+    border-radius: 10px;
+}
 
 /* Order相關 *//* Order相關 *//* Order相關 *//* Order相關 */
 .scOrderItem>.bd2:nth-of-type(even) {
