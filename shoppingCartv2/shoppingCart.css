@@ -141,25 +141,11 @@ body {
   border-bottom: 1px solid #CDCDD2;
 }
 
-.myInputLabel {
+.sc-inputLabel {
   /* 欄位名稱 */
-  font-family: 'Noto Serif TC', serif;
+  font-family: 'Noto Sans TC', serif;
   font-size: 20px;
-  font-weight: normal;
-}
-
-@media (max-width: 992px) {
-  .myInputLabel {
-    font-size: 16px;
-    font-weight: normal;
-  }
-}
-
-@media (max-width: 576px) {
-  .myInputLabel {
-    font-size: 12px;
-    font-weight: normal;
-  }
+  font-weight: medium;
 }
 
 .sc-contentFont {
@@ -187,6 +173,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.sc-describePriceFont {
+  /* 訂單商品下拉金額 */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: medium;
+  color: #383844;
+  color: #E64B4B;
+}
+
 .sc-nameFont {
   /* 商品名稱 */
   font-family: 'Noto Sans TC', serif;
@@ -196,14 +191,11 @@ body {
 }
 
 .sc-qtyFont {
+  /* 商品數量 */
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: medium;
   color: #383844;
-}
-
-.sc-qtyFont span {
-  color: #E64B4B;
 }
 
 .sc-priceFont {

@@ -159,19 +159,11 @@ body {
     padding-bottom: 8px;
     border-bottom: 1px solid $myLineGray;
 }
-.myInputLabel { 
+.sc-inputLabel { 
     /* 欄位名稱 */
-    font-family: 'Noto Serif TC', serif;
+    font-family: 'Noto Sans TC', serif;
     font-size: 20px;
-    font-weight: normal;
-    @include sizeLg{
-        font-size: 16px;
-        font-weight: normal;
-    }
-    @include sizeSm{
-        font-size: 12px;
-        font-weight: normal;
-    }
+    font-weight: medium;
 }
 .sc-contentFont {
     /* bar標題、內文 */
@@ -196,6 +188,14 @@ body {
 .sc-describeFont span{
     font-family: 'Montserrat', sans-serif; 
 }
+.sc-describePriceFont {
+    /* 訂單商品下拉金額 */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: medium;
+    color: $myDark;
+    color: $myRed;
+}
 .sc-nameFont {
     /* 商品名稱 */
     font-family: 'Noto Sans TC', serif;
@@ -204,14 +204,12 @@ body {
     color: $myDark;
 }
 .sc-qtyFont {
+    /* 商品數量 */
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: medium;
     color: $myDark;
 
-}
-.sc-qtyFont span {
-    color: $myRed;
 }
 
 .sc-priceFont {
