@@ -173,8 +173,8 @@ body {
         font-weight: normal;
     }
 }
-.barTitleFont {
-    /* bar標題 */
+.sc-contentFont {
+    /* bar標題、內文 */
     font-family: 'Noto Sans TC', serif;
     font-size: 18px;
     font-weight: normal;
@@ -187,6 +187,7 @@ body {
     font-weight: bold;
 } */
 .sc-describeFont {
+    /* 訂單商品描述、 */
     font-family: 'Noto Sans TC', serif;
     font-size: 20px;
     font-weight: normal;
@@ -425,6 +426,10 @@ body {
     /* 上方分隔線*/
     border-top: 1px solid $myLineGray;
 }
+.bdBottom {
+    /* 上方分隔線*/
+    border-bottom: 1px solid $myLineGray;
+}
 .itemRow.selected {
     /* 商品被勾選的時候背景色*/
     background-color: $myPinkOpa;
@@ -490,6 +495,12 @@ body {
     @include sizeLg{
         padding: 30px;
     }
+}
+.sc-priceListRow {
+    border-top: 1px solid $myLineGray;
+    border-bottom: 1px solid $myLineGray;
+    margin-top: 120px;
+    padding: 20px 0;
 }
 .dropdownIcon {
     margin-right: -35px;

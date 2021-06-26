@@ -85,12 +85,12 @@
                 </div>
             </div>
 
-            <!---------------- 選擇物流方式 ---------------->
+            <!---------------- 第二頁 ---------------->
             <div class="col-10 mx-auto px-0 shadow-sm ">
-                <!-- 物流方式bar -->
+                <!-- bar -->
                 <div class="d-flex select-bar align-items-center">
                 </div>
-                <!-- 購物車內容列表 -->
+                <!-- 訂單商品 -->
                 <div class="paymentSelRow d-flex flex-column justify-content-around">
                     <div class="mb-3">
                         <div class="dropdownItemsTitle d-flex justify-content-between align-items-center pb-2 titleDivider">
@@ -122,36 +122,54 @@
                                 <div class="col-2 sc-priceFont">商品詳細頁</div>
                             </div>
                         </div>
-                        <div class="dropdownItems d-flex justify-content-end align-items-center mt-2">
+                        <div class="dropdownItems d-flex justify-content-end align-items-center mt-2 ml-auto">
                             <div class="sc-describeFont mx-3">訂單金額(<span>41</span> 件商品)</div>
                             <div class="sc-qtyFont mx-4"><span>NT 12,000</span></div>
                             <img id="dropdownBtn" class="icon18px dropdownIcon" src="../public/img/dropdownBtn.svg" alt="">
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="myh5 mb-3 ml-4 titleDivider">●&nbsp&nbsp選擇物流方式</div>
-                    <div>
-                        <div class="d-flex align-items-center justify-content-start my-3">
-                            <!-- <input class="myRadio ml-5" type="radio" name="selectOne" id=""> -->
-                            <div class="myRadio ml-5"></div>
-                            <div class="bd2 mb-0 ml-4">便利商店(未滿900元，運費60元)</div>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-start my-3">
-                            <!-- <input class="myRadio ml-5" type="radio" name="selectOne" id=""> -->
-                            <div class="myRadio ml-5"></div>
-                            <div class="bd2 mb-0 ml-4">宅配(未滿900元，運費120元)</div>
                         </div>
                     </div>
+
+                    <!-- 選擇物流方式 -->
+                    <div class="dropdownItemsTitle pb-2 mb-3 mt-5 titleDivider">
+                        <div class="scTitle col-5">選擇物流方式</div> 
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <!-- <input class="myRadio ml-5" type="radio" name="selectOne" id=""> -->
+                        <div class="myRadio ml-5"></div>
+                        <div class="sc-contentFont mb-0 ml-3">便利商店(未滿900元，運費60元)</div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <!-- <input class="myRadio ml-5" type="radio" name="selectOne" id=""> -->
+                        <div class="myRadio ml-5"></div>
+                        <div class="sc-contentFont mb-0 ml-3">宅配(未滿900元，運費120元)</div>
+                    </div>
+
+                    <!-- 總金額：商品小計 + 運費 -->
+                    <div class="sc-priceListRow">
+                        <div class="col-3 d-flex justify-content-between p-0  ml-auto">
+                            <div>商品總金額:</div>
+                            <div>NT 1,200</div>
+                        </div>
+                        <div class="col-3 d-flex justify-content-between p-0 ml-auto">
+                            <div>運費總金額:</div>
+                            <div>NT 60</div>
+                        </div>
+
+                    </div>
+                    <!-- 總金額列 -->
+                    <div class="w-100 d-flex jus justify-content-end my-2 px-0">
+                        <div class="totalPriceFont col-3 px-0">總計</div>
+                        <div class="totalPriceFont-med col-3 px-0">
+                            NT<span>$1200</span>
+                        </div> 
+                    </div>
+                    <!-- <div class="d-flex flex-column align-items-end my-3">
+                        <div class="mb-0 totalPriceFont">總計 NT$<span>1260</span>元</div>
+                    </div> -->
+                    
                 </div>
             </div>
 
-            <!-- 總金額：商品小計 + 運費 -->
-            <div class="col-10 mx-auto px-0">
-                <div class="d-flex flex-column align-items-end my-5">
-                    <div class="mb-0 totalPriceFont">總計 NT$<span>1260</span>元</div>
-                </div>
             </div>
 
             <!-- 按鈕列 -->
