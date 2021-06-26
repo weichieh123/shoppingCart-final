@@ -473,14 +473,14 @@ body {
   padding-bottom: 100px;
 }
 
-.paymentSelRow {
+.sc-Wrap {
   width: 100%;
   background-color: #fff;
   padding: 50px 100px;
 }
 
 @media (max-width: 992px) {
-  .paymentSelRow {
+  .sc-Wrap {
     padding: 30px;
   }
 }
