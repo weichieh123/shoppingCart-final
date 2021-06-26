@@ -1,5 +1,5 @@
 body * {
-     outline: 1px solid red; 
+    //  outline: 1px solid red; 
 }
 
 $stepFont: 20px;
@@ -401,7 +401,7 @@ body {
     height: 25px;
     border-radius: 50%;
     background-color: $myWhite;
-    border: 1px solid $myDark;
+    border: 1px solid $myGray;
 }
 .myCheckbox:hover, .myRadio:hover {
     background-color: $myRed;
@@ -519,6 +519,7 @@ $labelName: 20px;
 .myLabelGroup {
     padding: 0 $labelTriW;
     margin-top: 100px;
+    margin-left: 20px;
 }
 
 .labelSquare {
