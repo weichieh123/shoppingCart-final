@@ -228,6 +228,9 @@ body {
     background-color: $myWhite;
     text-align: center;
 }
+.sc-formTitle .col-5 {
+    text-align: left;
+}
 // .bd1 {
 //     /* 商品數量+- */
 //     font-family: 'Montserrat', sans-serif;
@@ -436,7 +439,7 @@ body {
     width: 195px;
     height: 130px;
     background-color: #ccc;
-     margin-left: 3vw; 
+    //  margin-left: 3vw; 
     // @include sizeLg {
     //     display: none;
     // }

@@ -215,6 +215,10 @@ body {
   text-align: center;
 }
 
+.sc-formTitle .col-5 {
+  text-align: left;
+}
+
 .totalQtyFont {
   /* 總數量 */
   text-align: right;
@@ -424,7 +428,6 @@ body {
   width: 195px;
   height: 130px;
   background-color: #ccc;
-  margin-left: 3vw;
 }
 
 .itemPic-sm {
