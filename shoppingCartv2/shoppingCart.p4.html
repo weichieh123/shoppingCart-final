@@ -77,6 +77,12 @@
                 </div>
 
                 <div class="sc-Wrap d-flex flex-column justify-content-around">
+                    <!-- 訂單編號 -->
+                    <div class="pb-2 mb-3 titleDivider d-flex justify-content-start align-items-center">
+                        <div class="scTitle col-2">訂單編號</div>
+                        <div class="sc-nameFont">1155664464</div>
+                    </div>
+
                     <!-- 訂單商品 -->
                     <div
                         class="dropdownItemsTitle d-flex justify-content-between align-items-center pb-2 titleDivider">
@@ -116,62 +122,21 @@
                     </div>
 
                     
-                    
-
-                    <!-- 收貨人資料 -->
+                    <!-- 收件地址與資料 -->
                     <div class="pb-2 mb-3 mt-5 titleDivider">
-                        <div class="scTitle col-5">收貨人資料</div>
+                        <div class="scTitle col-5">收件地址與資料</div>
                     </div>
-                    <div class="ml-5 d-flex flex-column">
-                        <label class="sc-inputLabel" for="">姓名：</label>
-                        <input class="w-25" type="text">
-
-                        <label class="sc-inputLabel" for="">連絡電話：</label>
-                        <input class="w-25" type="text">
-
-                        <label class="sc-inputLabel" for="">寄送地址：</label>
-                        <div>
-                            <select class="sc-contentFont" name="" id="">
-                                <option value="">縣市</option>
-                            </select>
-                            <select class="sc-contentFont" name="" id="">
-                                <option value="">區域</option>
-                            </select>
-                            <input class="w-50" type="text">
+                    <div class="ml-5 d-flex mt-3">
+                        <div class="orderPic">
+                            <img src="../public/img/gift.svg" alt="">
+                        </div>
+                        <div class="sc-contentFont ml-5">
+                            姓名：黃XX<br>
+                            電話：(+886)09XXXXXXXX<br>
+                            超商：全家<br>
+                            地址：新莊中悅店 新北市新莊區中平路400號1樓<br>
                         </div>
                     </div>
-
-                    <!-- 信用卡資料 -->
-                    <div class="pb-2 mb-3 mt-5 titleDivider">
-                        <div class="scTitle col-5">收貨人資料</div>
-                    </div>
-                    <div class="d-flex">
-                        <div class="col-6">
-                            <div class="creditCard mr-4"></div>
-                        </div>
-                        <div class="col-6 d-flex flex-column">
-                            <label class="sc-inputLabel" for="">信用卡號碼：</label>
-                            <input class="w-100" type="text">
-
-                            <label class="sc-inputLabel" for="">持卡人姓名：</label>
-                            <input class="w-100" type="text">
-
-                            <div class="d-flex">
-                                <div class="d-flex flex-column mr-1">
-                                    <label class="sc-inputLabel" for="">有效日期：</label>
-                                    <input class="w-100" type="text">
-                                </div>
-
-                                <div class="d-flex flex-column ml-1">
-                                    <label class="sc-inputLabel" for="">安全碼：</label>
-                                    <input class="w-100" type="text">
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
 
 
                     <!-- 總金額：商品小計 + 運費 -->

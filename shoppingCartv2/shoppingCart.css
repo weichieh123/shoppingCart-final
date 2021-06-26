@@ -183,7 +183,7 @@ body {
 }
 
 .sc-nameFont {
-  /* 商品名稱 */
+  /* 商品名稱、訂單編號 */
   font-family: 'Noto Sans TC', serif;
   font-size: 16px;
   font-weight: normal;
