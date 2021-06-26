@@ -363,8 +363,8 @@ body {
 
 .hotTag {
   width: 82px;
-  left: 40px;
-  top: -102px;
+  left: 50px;
+  top: -42px;
 }
 
 .hotTagTitle {
@@ -453,6 +453,12 @@ body {
 .priceRow {
   /* 總金額列 */
   background-color: #fff;
+}
+
+.sc-adRow {
+  background-color: #fff;
+  width: 100%;
+  height: 260px;
 }
 
 .btnRow {
@@ -586,7 +592,8 @@ body {
 
 /* =============map區塊end============== */
 .ad-arrow {
-  width: 15px;
+  width: 16.3px;
+  margin: 0 auto;
 }
 
 /* Order相關 */
