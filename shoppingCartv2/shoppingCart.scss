@@ -1,5 +1,5 @@
 body * {
-    //  outline: 1px solid red; 
+     outline: 1px solid red; 
 }
 
 $stepFont: 20px;
@@ -228,8 +228,8 @@ body {
     background-color: $myWhite;
     text-align: center;
 }
-.sc-formTitle .col-5 {
-    text-align: left;
+.firstTitle {
+    margin-left: 97px;
 }
 // .bd1 {
 //     /* 商品數量+- */

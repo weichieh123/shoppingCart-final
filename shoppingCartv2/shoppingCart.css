@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body * {
+  outline: 1px solid red;
+}
+
 .moon {
   width: 50px;
   height: 50px;
@@ -215,8 +219,8 @@ body {
   text-align: center;
 }
 
-.sc-formTitle .col-5 {
-  text-align: left;
+.firstTitle {
+  margin-left: 97px;
 }
 
 .totalQtyFont {
