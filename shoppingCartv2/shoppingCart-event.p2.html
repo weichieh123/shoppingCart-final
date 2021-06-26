@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <title>sc p2</title>
+    <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../styleguide/style-guide.css">
+    <link rel="stylesheet" href="./shoppingCart.css">
+
+</head>
+
+<body>
+    <div class="bgMountainRow container-fluid p-0">
+        <div class="bgMountain position-absolute">
+            <img src="../public/img/bgMountain.svg" alt="">
+        </div>
+    </div>
+
+
+    <content>
+        <div class="container-fluid">
+            <!-- 購物車流程 -->
+            <div class="col-10 px-0 d-flex mx-auto justify-content-center">
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle"></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <div class="stepFont">確認購物車</div>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle stepActive"></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <div class="stepFont">物流選擇 </div>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle "></i>
+                        <i class="stepLine"></i>
+                        <i class="stepArrow right"></i>
+                    </div>
+                    <div class="stepFont">填寫資料</div>
+                </div>
+                <div class="step">
+                    <div class="d-flex align-items-center">
+                        <i class="stepCircle "></i>
+                    </div>
+                    <div class="stepFont">完成訂購</div>
+                </div>
+
+            </div>
+            <!-- label -->
+            <div class="col-10 mx-auto px-0">
+                <div class="myLabelGroup d-flex">
+                    <div class="labelSquare">
+                        <div class="lableName">商品</div>
+                        <div class="labelTriangle"></div>
+                    </div>
+                    <div class="labelSquare bgWhite">
+                        <div class="lableName">訂閱</div>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                    <div class="labelSquare bgWhite">
+                        <div class="lableName">活動</div>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------------- 第二頁 ---------------->
+            <div class="col-10 mx-auto px-0 shadow-sm ">
+                <!-- bar -->
+                <div class="d-flex select-bar align-items-center">
+                </div>
+                <div class="sc-Wrap d-flex flex-column justify-content-around">
+                    <!-- 訂單商品 -->
+                    <div class="dropdownItemsTitle d-flex justify-content-between align-items-center pb-2 titleDivider">
+                        <div class="scTitle col-5">訂單商品</div>
+                        <div class="sc-formTitle hidden col-1">數量</div>
+                        <div class="sc-formTitle hidden col-2">單價</div>
+                        <div class="sc-formTitle hidden col-2">總價</div>
+                        <div class="col-2"></div>
+                    </div>
+                    <div class="dropdownItemsPanel">
+                        <div class="dropdownItem my-2 d-flex align-items-center py-3">
+                            <div class="col-5 d-flex align-items-center sc-nameFont">
+                                <div class="itemPic-sm mr-3"></div>
+                                <div>弦月柔棉 日用薄型衛生棉 15片</div>
+                            </div>
+                            <div class="col-1 sc-priceFont">1</div>
+                            <div class="col-2 sc-priceFont">$ 600</div>
+                            <div class="col-2 sc-priceFont">$ 600</div>
+                            <div class="col-2 sc-priceFont">商品詳細頁</div>
+                        </div>
+                        <div class="dropdownItem my-2 d-flex align-items-center py-3">
+                            <div class="col-5 d-flex align-items-center sc-nameFont">
+                                <div class="itemPic-sm mr-3"></div>
+                                <div>弦月柔棉 日用薄型衛生棉 15片</div>
+                            </div>
+                            <div class="col-1 sc-priceFont">1</div>
+                            <div class="col-2 sc-priceFont">$ 600</div>
+                            <div class="col-2 sc-priceFont">$ 600</div>
+                            <div class="col-2 sc-priceFont">商品詳細頁</div>
+                        </div>
+                    </div>
+                    <div class="dropdownItems d-flex justify-content-end align-items-center mt-2 ml-auto">
+                        <div class="sc-describeFont mx-3">訂單金額(<span>41</span> 件商品)</div>
+                        <div class="sc-describePriceFont mx-4">NT 12,000</div>
+                        <img id="dropdownBtn" class="icon18px dropdownIcon" src="../public/img/dropdownBtn.svg" alt="">
+                    </div>
+
+                    <!-- 選擇物流方式 -->
+                    <div class="pb-2 mb-3 mt-5 titleDivider">
+                        <div class="scTitle col-5">選擇物流方式</div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <!-- <input class="myRadio ml-5" type="radio" name="selectOne" id=""> -->
+                        <div class="myRadio ml-5"></div>
+                        <div class="sc-contentFont mb-0 ml-3">便利商店(未滿900元，運費60元)</div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-start my-2">
+                        <!-- <input class="myRadio ml-5" type="radio" name="selectOne" id=""> -->
+                        <div class="myRadio ml-5"></div>
+                        <div class="sc-contentFont mb-0 ml-3">宅配(未滿900元，運費120元)</div>
+                    </div>
+
+                    <!-- 總金額：商品小計 + 運費 -->
+                    <div class="sc-priceListRow">
+                        <div class="col-3 d-flex justify-content-between p-0  ml-auto">
+                            <div class="sc-describeFont">商品總金額:</div>
+                            <div class="sc-describeFont"><span>NT 1,200</span></div>
+                        </div>
+                        <div class="col-3 d-flex justify-content-between p-0 ml-auto">
+                            <div class="sc-describeFont">運費總金額:</div>
+                            <div class="sc-describeFont"><span>NT 60</span></div>
+                        </div>
+                    </div>
+                    <!-- 總金額列 -->
+                    <div class="w-100 d-flex jus justify-content-end my-2 px-0">
+                        <div class="totalPriceFont col-3 px-0">總計</div>
+                        <div class="totalPriceFont-med col-3 px-0">
+                            NT<span>$1260</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 按鈕列 -->
+        <div class="col-10 mx-auto">
+            <div class="d-flex btnRow justify-content-between mb-2">
+                <div class="bg-green p-4 fitContent">
+                    <button class="btn-soft-green">上一步</button>
+                </div>
+                <div class="bg-green p-4 fitContent">
+                    <button class="btn-soft-green">下一步</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </content>
+
+
+    <script src="../public/lib/jquery-3.6.0.js"></script>
+    <script src="../public/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./shoppingCart.js"></script>
+
+
+</body>
+
+</html>
