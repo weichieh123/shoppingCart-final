@@ -43,31 +43,6 @@
   }
 }
 
-.search {
-  width: 150px;
-  height: 30px;
-  border-radius: 30px;
-  border: 1px solid #383844;
-  margin-left: auto;
-  overflow: hidden;
-  position: relative;
-}
-
-.search input {
-  width: 150px;
-  height: 30px;
-}
-
-.search-icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid #383844;
-  background-color: #F7F7EE;
-  position: absolute;
-  right: 0;
-}
-
 body {
   background-color: #F7F7EE;
   /* 之後要刪 */
@@ -80,7 +55,7 @@ body {
 
 .bgMountain {
   left: 0;
-  top: 130px;
+  top: 240px;
 }
 
 .bgMountain img {
@@ -96,24 +71,6 @@ body {
 
 /*========= 共同class ==================*/
 /*=========== 字型 =======================*/
-.myh2 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 48px;
-  font-weight: lighter;
-}
-
-.myh3 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 30px;
-  font-weight: lighter;
-}
-
-.myh4 {
-  font-family: 'Noto Serif TC', serif;
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .scTitle {
   /* 桌機版標題 */
   font-family: 'Noto Sans TC', serif;
@@ -156,11 +113,6 @@ body {
   color: #383844;
 }
 
-/* .myh6 {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 18px;
-    font-weight: bold;
-} */
 .sc-describeFont {
   /* 訂單商品描述、 */
   font-family: 'Noto Sans TC', serif;
@@ -284,6 +236,10 @@ body {
 
 /*================= 字型 end =======================*/
 /*================= 購物車流程 =======================*/
+.scStepRow {
+  margin-top: 120px;
+}
+
 .stepCircle {
   width: 40px;
   height: 40px;
@@ -342,8 +298,6 @@ body {
 }
 
 /*================= 購物車流程end =======================*/
-/*================= Navbar =======================*/
-/*================= Navbar end =======================*/
 .icon15px {
   width: 15px;
   height: 15px;

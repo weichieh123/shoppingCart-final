@@ -35,10 +35,6 @@ $myLineGray: #CDCDD2;
     }
 }
 
-// *:hover {
-//     animation: pulse;
-//     animation-duration: .5s;
-// }
 
 .moon {
     width: 50px;
@@ -63,33 +59,6 @@ $myLineGray: #CDCDD2;
     }
 }
 
-
-.search {
-    width: 150px;
-    height: 30px;
-    border-radius: 30px;
-    border: 1px solid $myDark;
-    margin-left: auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.search input {
-    width: 150px;
-    height: 30px;
-
-}
-
-.search-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid $myDark;
-    background-color: $myLight;
-    position: absolute;
-    right: 0;
-}
-
 body {
     background-color: $myLight;
     /* 之後要刪 */
@@ -102,7 +71,7 @@ body {
 
 .bgMountain {
     left: 0;
-    top: 130px;
+    top: 240px;
 }
 
 .bgMountain img {
@@ -110,10 +79,6 @@ body {
 }
 
 /*======== 共同class ==================*/
-// .divider {
-//     padding-bottom: 50px;
-//     border-bottom: 1px solid $myLineGray;
-// }
 
 .fitContent {
     width: fit-content;
@@ -121,23 +86,6 @@ body {
 
 /*========= 共同class ==================*/
 /*=========== 字型 =======================*/
-.myh2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 48px;
-    font-weight: lighter;
-}
-
-.myh3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
-    font-weight: lighter;
-}
-
-.myh4 {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 30px;
-    font-weight: bold;
-}
 
 .scTitle { 
     /* 桌機版標題 */
@@ -172,12 +120,6 @@ body {
     font-weight: normal;
     color: $myDark;
 }
-
-/* .myh6 {
-    font-family: 'Noto Serif TC', serif;
-    font-size: 18px;
-    font-weight: bold;
-} */
 .sc-describeFont {
     /* 訂單商品描述、 */
     font-family: 'Noto Sans TC', serif;
@@ -231,23 +173,6 @@ body {
 .firstTitle {
     margin-left: 97px;
 }
-// .bd1 {
-//     /* 商品數量+- */
-//     font-family: 'Montserrat', sans-serif;
-//     font-size: 18px;
-//     font-weight: normal;
-// }
-
-// .bd2 {
-//     /* 內文 */
-//     font-family: 'Noto Sans TC', sans-serif;
-//     font-size: 18px;
-//     font-weight: normal;
-//     @include sizeLg{
-//         font-size: 14px;
-//         font-weight: bold;
-//     }
-// }
 
 .totalQtyFont {
     /* 總數量 */
@@ -305,6 +230,9 @@ body {
 
 /*================= 字型 end =======================*/
 /*================= 購物車流程 =======================*/
+.scStepRow {
+    margin-top: 120px;
+}
 .stepCircle {
     width: 2*$stepFont;
     height: 2*$stepFont;
@@ -347,18 +275,6 @@ body {
     -webkit-transform: rotate(-45deg);
   }
 /*================= 購物車流程end =======================*/
-/*================= Navbar =======================*/
-
-
-// .dropdown-menu {
-//         margin-left: -50px;
-//     }
-    
-// nav .container-fluid {
-//         background-color: $myLight;
-//         height: 120px;
-//     }
-/*================= Navbar end =======================*/
         
 .icon15px {
     width: 15px;
@@ -505,9 +421,6 @@ body {
 .dropdownIcon {
     margin-right: -35px;
 }
-// .dropdown-toggle::after {
-//     display: none;
-// }
 
 /* =============label區塊============== */
 $labelSquareW: 134px;
