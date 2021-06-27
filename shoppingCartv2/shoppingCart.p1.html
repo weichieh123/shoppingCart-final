@@ -24,11 +24,8 @@
 </head>
 
 <body>
-    <div class="bgMountainRow container-fluid p-0">
-        <div class="bgMountain position-absolute">
-            <img src="../public/img/bgMountain.svg" alt="">
-        </div>
-    </div>
+
+    <!-- Nav bar -->
     <nav class="nav-bar nav-bar-fixed container-fluid">
         <div class="nav-bar-top d-flex">
             <div class="col-4"></div>
@@ -52,7 +49,6 @@
                     <p class="small mx-0">(0)</p>
                 </div>
             </div>
-            
         </div>
         <div class="nav-bar-bottom">
             <ul class="d-flex justify-content-around col-11 mx-auto">
@@ -65,28 +61,34 @@
         </div>
     </nav>
 
-    
-    <content>
-        <!-- 麵包屑 -->
-        <div class="top-line container-fluid">
-            <div class="d-flex justify-content-between">
-                <div class="bread-box">
-                   <div class="bread d-flex">
-                       <a href="">HOME</a>
-                       <p>></p>
-                       <a href="">CART</a>
-                   </div>
-               </div>
-               <div class="search-box">
-                   <form class="search">
-                       <input class="search-input" type="text" placeholder="Search">
-                       <button class="search-button" href="#"><i class="fas fa-search"></i></button>
-                   </form>
-               </div>
-           </div>
+    <!-- 麵包屑 -->
+    <div class="top-line container-fluid">
+        <div class="d-flex justify-content-between">
+            <div class="bread-box">
+                <div class="bread d-flex">
+                    <a href="">HOME</a>
+                    <p>></p>
+                    <a href="">CART</a>
+                </div>
+            </div>
+            <div class="search-box">
+                <form class="search">
+                    <input class="search-input" type="text" placeholder="Search">
+                    <button class="search-button" href="#"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
         </div>
+    </div>
 
 
+    <content>
+
+        <!-- 背景山 -->
+        <div class="bgMountainRow container-fluid p-0">
+            <div class="bgMountain position-absolute">
+                <img src="../public/img/bgMountain.svg" alt="">
+            </div>
+        </div>
 
         <div class="container-fluid">
             <!-- 購物車流程 -->
@@ -147,14 +149,15 @@
                 <div class="d-flex select-bar align-items-center bdBottom">
                     <!-- <input class="myCheckbox ml-3" type="radio" name="selectAll" id=""> -->
                     <div id="selectAll" class="myCheckbox selectAll ml-4 mr-5"></div>
-                    
+
                     <div class="sc-contentFont ml-3">全選</div>
                     <i class="fas fa-trash ml-auto p-3 scBtn"></i>
                 </div>
                 <div class="d-flex sc-formTitle bdBottom py-1">
                     <!-- <div class="ml-5 mr-5"></div> -->
                     <div class="col-6 d-flex ">
-                        <div class="firstTitle">商品項目</div></div>
+                        <div class="firstTitle">商品項目</div>
+                    </div>
                     <div class="col-2">數量</div>
                     <div class="col-2">單價</div>
                     <div class="col-2">總價</div>
@@ -225,8 +228,8 @@
                         <i class="fas fa-times p-3 scBtn "></i>
                     </div>
                 </div>
-                
-                
+
+
                 <!-- 總金額列 -->
                 <div class="w-100 priceRow px-0">
                     <div class=" col-10 bdBottom d-flex flex-column align-items-center py-5 mx-auto">
@@ -235,13 +238,13 @@
                             <div class="totalPriceFont col-3 px-0">總計</div>
                             <div class="totalPriceFont-med col-3 px-0">
                                 NT<span>$1200</span>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                </div>
-            
+            </div>
+
 
             <!-- 按鈕列 -->
             <div class="col-10 mx-auto">
