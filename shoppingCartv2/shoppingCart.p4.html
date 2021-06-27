@@ -24,17 +24,72 @@
 </head>
 
 <body>
-    <div class="bgMountainRow container-fluid p-0">
-        <div class="bgMountain position-absolute">
-            <img src="../public/img/bgMountain.svg" alt="">
+    <!-- Nav bar -->
+    <nav class="nav-bar nav-bar-fixed container-fluid">
+        <div class="nav-bar-top d-flex">
+            <div class="col-4"></div>
+            <div class="nav-logo col-4 d-flex justify-content-center">
+                LOGO HERE
+            </div>
+            <div class="nav-member-act col-4 d-flex justify-content-end">
+                <div class="">
+                    <p class="small">來賓 您好</p>
+                </div>
+                <div class="ml-2">
+                    <a class="mx-0" href=""><i class="fas fa-user"></i></a>
+                    <div></div>
+                </div>
+                <div class="ml-2">
+                    <a class="mx-0" href=""><i class="fas fa-bookmark"></i></a>
+                    <p class="small mx-0">(0)</p>
+                </div>
+                <div class="ml-2">
+                    <a class="mx-0" href=""><i class="fas fa-shopping-cart"></i></a>
+                    <p class="small mx-0">(0)</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-bar-bottom">
+            <ul class="d-flex justify-content-around col-11 mx-auto">
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#article">ARTICLE</a></li>
+                <li><a href="#order">ORDER</a></li>
+                <li><a href="#event">EVENT</a></li>
+                <li><a href="#join-us">JOIN US</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 麵包屑 -->
+    <div class="top-line container-fluid">
+        <div class="d-flex justify-content-between">
+            <div class="bread-box">
+                <div class="bread d-flex">
+                    <a href="">HOME</a>
+                    <p>></p>
+                    <a href="">CART</a>
+                </div>
+            </div>
+            <div class="search-box">
+                <form class="search">
+                    <input class="search-input" type="text" placeholder="Search">
+                    <button class="search-button" href="#"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
         </div>
     </div>
-
-
+    
     <content>
+        <!-- 背景山 -->
+        <div class="bgMountainRow container-fluid p-0">
+            <div class="bgMountain position-absolute">
+                <img src="../public/img/bgMountain.svg" alt="">
+            </div>
+        </div>
+
         <div class="container-fluid">
             <!-- 購物車流程 -->
-            <div class="col-10 px-0 d-flex mx-auto justify-content-center">
+            <div class="scStepRow col-10 px-0 d-flex mx-auto justify-content-center">
                 <div class="step">
                     <div class="d-flex align-items-center">
                         <i class="stepCircle"></i>
@@ -67,7 +122,21 @@
                 </div>
             </div>
             <!-- label -->
-            <div class="col-10 mx-auto px-0 mt-5">
+            <div class="col-10 mx-auto px-0">
+                <div class="myLabelGroup d-flex">
+                    <div class="labelSquare">
+                        <div class="lableName">商品</div>
+                        <div class="labelTriangle"></div>
+                    </div>
+                    <div class="labelSquare bgWhite">
+                        <div class="lableName">訂閱</div>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                    <div class="labelSquare bgWhite">
+                        <div class="lableName">活動</div>
+                        <div class="labelTriangleWhite"></div>
+                    </div>
+                </div>
             </div>
 
             <!---------------- 第四頁 ---------------->
